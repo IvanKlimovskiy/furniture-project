@@ -1,0 +1,8 @@
+.nav-menu__list {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 50px;
+}
