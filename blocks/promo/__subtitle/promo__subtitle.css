@@ -1,0 +1,8 @@
+.promo__subtitle {
+  color: white;
+  max-width: 423px;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+  margin: 20px 0 0;
+  font-size: 30px;
+}
