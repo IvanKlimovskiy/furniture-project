@@ -1,6 +1,7 @@
 .promo__text {
+  color: #405357;
   padding-left: 30px;
-  background-color: rgb(69, 141, 141);
+  background-color: #80A6AD;
   display: flex;
   flex-direction: column;
   justify-content: center;

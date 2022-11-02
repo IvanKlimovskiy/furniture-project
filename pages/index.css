@@ -12,3 +12,11 @@
 @import url(../blocks/promo/__text/promo__text.css);
 @import url(../blocks/promo/__title/promo__title.css);
 @import url(../blocks/promo/promo.css );
+@import url(../blocks/gallery/gallery.css);
+@import url(../blocks/gallery-decor/__image/_first/gallery-decor__image_first.css);
+@import url(../blocks/gallery-decor/__image/_fourth/gallery-decor__image_fourth.css);
+@import url(../blocks/gallery-decor/__image/_second/gallery-decor__image_second.css);
+@import url(../blocks/gallery-decor/__image/_third/gallery-decor__image_third.css);
+@import url(../blocks/gallery-decor/__image/gallery-decor__image.css);
+@import url(../blocks/gallery-decor/__title/gallery-decor__title.css);
+@import url(../blocks/gallery-decor/gallery-decor.css);
