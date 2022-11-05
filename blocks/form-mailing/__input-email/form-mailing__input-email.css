@@ -1,0 +1,11 @@
+.form-mailing__input-email {
+  box-sizing: border-box;
+  padding-left: 10px;
+  border: 1px solid #FC3F3F;
+  outline: none;
+  background-color: #D6D6D6;
+  margin: 0 0 5px;
+  display: block;
+  width: 400px;
+  height: 35px;
+}

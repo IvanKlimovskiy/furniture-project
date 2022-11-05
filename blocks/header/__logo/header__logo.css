@@ -1,5 +1,6 @@
 .header__logo {
-  font-size: 23px;
+  max-width: 200px;
+  font-size: 24px;
   font-weight: bold;
   border-bottom: 2px solid black;
   padding-bottom: 5px;

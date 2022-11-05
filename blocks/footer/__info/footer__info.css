@@ -1,0 +1,8 @@
+.footer__info {
+  box-sizing: border-box;
+  padding: 0 20px 0;
+  justify-content: space-between;
+  display: flex;
+  max-width: 960px;
+  width: 100%;
+}

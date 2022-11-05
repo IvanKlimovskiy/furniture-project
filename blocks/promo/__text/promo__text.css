@@ -1,4 +1,6 @@
 .promo__text {
+  box-sizing: border-box;
+  max-width: 550px;
   color: #405357;
   padding-left: 30px;
   background-color: #80A6AD;

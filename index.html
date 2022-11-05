@@ -10,15 +10,15 @@
 </head>
 
 <body class="page">
-  <header class="header-container">
-    <div class="header">
-      <div class="header__logo">ИНТЕРЬЕР</div>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="header__logo">Формула дизайна</div>
       <nav class="nav-menu">
         <ul class="nav-menu__list">
           <li><a class="nav-menu__item" href="#">Главная</a></li>
-          <li><a class="nav-menu__item" href="#">Декор</a></li>
-          <li><a class="nav-menu__item" href="#">Кухня</a></li>
-          <li><a class="nav-menu__item" href="#">Спальня</a></li>
+          <li><a class="nav-menu__item" href="#">Коммерческая мебель</a></li>
+          <li><a class="nav-menu__item" href="#">Кухни</a></li>
+          <li><a class="nav-menu__item" href="#">Готовая мебель</a></li>
           <li><a class="nav-menu__item" href="#">О нас</a></li>
           <li><a class="nav-menu__item" href="#">Контакты</a></li>
         </ul>
@@ -26,7 +26,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <section class="welcome-page">
       <article class="promo">
         <div class="promo__text">
@@ -41,42 +41,89 @@
           </p>
         </div>
         <div class="promo__images">
-          <img src="./image/promo.png" alt="Промо" class="promo__image">
+          <img src="./image/kitchen4.jpg" alt="Промо" class="promo__image">
         </div>
       </article>
     </section>
     <section class="gallery">
-      <article class="gallery-decor">
-        <h2 class="gallery-decor__title">
-          ДЕКОР
+      <article class="furniture commercial-furniture">
+        <h2 class="furniture__title commercial-furniture__title">
+          Коммерческая мебель
         </h2>
-        <img src="./image/promo.png" alt="Стол" class="gallery-decor__image gallery-decor__image_first">
-        <img src="./image/promo.png" alt="Стол" class="gallery-decor__image gallery-decor__image_second">
-        <img src="./image/promo.png" alt="Стол" class="gallery-decor__image gallery-decor__image_third">
-        <img src="./image/promo.png" alt="Стол" class="gallery-decor__image gallery-decor__image_fourth">
+        <a class="furniture__image-link furniture__image-link_first" href=""><img
+            src="./image/commercial-furniture1.jpg" alt="Стол" class="furniture__image"></a>
+        <a class="furniture__image-link furniture__image-link_second" href=""><img
+            src="./image/commercial-furniture2.jpg" alt="Стол" class="furniture__image"></a>
+        <a class="furniture__image-link furniture__image-link_third" href=""><img
+            src="./image/commercial-furniture3.jpg" alt="Стол" class="furniture__image"></a>
+        <a class="furniture__image-link furniture__image-link_fourth" href=""><img
+            src="./image/commercial-furniture4.jpg" alt="Стол" class="furniture__image"></a>
       </article>
-      <article class="gallery-decor gallery-kitchen">
-        <h2 class="gallery-decor__title gallery-kitchen__title">
-          Кухня
+      <article class="furniture kitchen">
+        <h2 class="furniture__title kitchen__title">
+          Кухни
         </h2>
-        <img src="./image/promo.png" alt="Стол" class="gallery-decor__image gallery-kitchen__image_first">
-        <img src="./image/promo.png" alt="Стол" class="gallery-decor__image gallery-kitchen__image_second">
-        <img src="./image/promo.png" alt="Стол" class="gallery-decor__image gallery-kitchen__image_third">
-        <img src="./image/promo.png" alt="Стол" class="gallery-decor__image gallery-kitchen__image_fourth">
+        <a class="furniture__image-link kitchen__image-link_first" href=""><img src="./image/kitchen1.jpg" alt="Стол"
+            class="furniture__image"></a>
+        <a class="furniture__image-link kitchen__image-link_second" href=""><img src="./image/kitchen2.jpg" alt="Стол"
+            class="furniture__image"></a>
+        <a class="furniture__image-link kitchen__image-link_third" href=""><img src="./image/kitchen3.jpg" alt="Стол"
+            class="furniture__image"></a>
+        <a class="furniture__image-link kitchen__image-link_fourth" href=""><img src="./image/kitchen4.jpg" alt="Стол"
+            class="furniture__image"></a>
       </article>
-      <article class="gallery-decor gallery-bedroom">
-        <h2 class="gallery-decor__title gallery-bedroom__title">
-          Спальня
+      <article class="furniture finished-furniture">
+        <h2 class="furniture__title finished-furniture__title">
+          Готовая мебель
         </h2>
-        <img src="./image/promo.png" alt="Стол" class="gallery-decor__image gallery-bedroom__image_first">
-        <img src="./image/promo.png" alt="Стол" class="gallery-decor__image gallery-bedroom__image_second">
-        <img src="./image/promo.png" alt="Стол" class="gallery-decor__image gallery-bedroom__image_third">
-        <img src="./image/promo.png" alt="Стол" class="gallery-decor__image gallery-bedroom__image_fourth">
+        <a class="furniture__image-link finished-furniture__image-link_first" href=""><img src="./image/finished-furniture1.jpg"
+            alt="Стол" class="furniture__image"></a>
+        <a class="furniture__image-link finished-furniture__image-link_second" href=""><img src="./image/finished-furniture2.jpg"
+            alt="Стол" class="furniture__image"></a>
+        <a class="furniture__image-link finished-furniture__image-link_third" href=""><img src="./image/finished-furniture3.jpg"
+            alt="Стол" class="furniture__image"></a>
+        <a class="furniture__image-link finished-furniture__image-link_fourth" href=""><img src="./image/finished-furniture4.jpg"
+            alt="Стол" class="furniture__image"></a>
       </article>
     </section>
   </main>
-  <footer>
-
+  <footer class="footer">
+    <div class="footer__info">
+      <div class="footer__contacts">
+        <h3 class="footer__contact-us">Свяжитесь с нами</h3>
+        <p class="footer__number">+7 (495) 000-00-00</p>
+        <p class="footer__email">info@mysite.ru</p>
+        <ul class="footer__social-links">
+          <li><a target="_blank" href="https://vk.com/" class="footer__social-link footer__vk"><img
+                class="footer__icon footer__vk-icon" src="./image/vk.png" alt="Вконтакте"></a></li>
+          <li><a target="_blank" href="https://facebook.com/" class="footer__social-link footer__facebook"><img
+                class="footer__icon footer__facebook-icon" src="./image/facebook.png" alt="Facebook"></a></li>
+          <li><a target="_blank" href="https://twitter.com/" class="footer__social-link footer__twitter"><img
+                class="footer__icon footer__twitter-icon" src="./image/twitter.png" alt="Twitter"></a></li>
+        </ul>
+      </div>
+      <div class="footer__payment-info">
+        <h3 class="footer__payment-accept">Мы принимаем</h3>
+        <ul class="footer__payment-systems">
+          <li><img class="footer__payment-system footer__visa-payment-system" src="./image/visa.png" alt="Visa"></li>
+          <li><img class="footer__payment-system footer__paypal-payment-system" src="./image/paypal.png" alt="PayPal">
+          </li>
+          <li><img class="footer__payment-system footer__american-express-payment-system"
+              src="./image/american-express.png" alt="American Express"></li>
+          <li><img class="footer__payment-system footer__master-card-payment-system" src="./image/master-card.png"
+              alt="Master Card"></li>
+        </ul>
+      </div>
+      <div class="footer__form-container">
+        <form class="form-mailing">
+          <h3 class="form-mailing__title">Подпишитесь на рассылку</h3>
+          <label class="form-mailing__label-email" for="email">
+            <input class="form-mailing__input-email" type="email" id="email" placeholder="Добавьте эл. почту">
+          </label>
+          <button type="submit" class="form-mailing__button">ОК</button>
+        </form>
+      </div>
+    </div>
   </footer>
 </body>
 
