@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="./vendor/itc-slider.min.css">
   <title>Document</title>
 </head>
 
@@ -40,8 +41,20 @@
             Создайте идеальное простанство
           </p>
         </div>
-        <div class="promo__images">
-          <img src="./image/kitchen4.jpg" alt="Промо" class="promo__image">
+        <div class="promo__images itc-slider" data-slider="itc-slider" data-autoplay="true" data-interval="4000">
+          <div class="itc-slider__wrapper">
+            <div class="itc-slider__items promo__items">
+              <div class="itc-slider__item promo__item">
+                <img src="./image/kitchen4.jpg" alt="Кухня" class="promo__image">
+              </div>
+              <div class="itc-slider__item">
+                <img src="./image/finished-furniture2.jpg" alt="Кухня" class="promo__image">
+              </div>
+              <div class="itc-slider__item">
+                <img src="./image/commercial-furniture2.jpg" alt="Кухня" class="promo__image">
+              </div>
+            </div>
+          </div>
         </div>
       </article>
     </section>
@@ -96,10 +109,10 @@
         <ul class="footer__social-links">
           <li><a target="_blank" href="https://vk.com/" class="footer__social-link footer__vk"><img
                 class="footer__icon footer__vk-icon" src="./image/vk.png" alt="Вконтакте"></a></li>
-          <li><a target="_blank" href="https://facebook.com/" class="footer__social-link footer__facebook"><img
-                class="footer__icon footer__facebook-icon" src="./image/facebook.png" alt="Facebook"></a></li>
-          <li><a target="_blank" href="https://twitter.com/" class="footer__social-link footer__twitter"><img
-                class="footer__icon footer__twitter-icon" src="./image/twitter.png" alt="Twitter"></a></li>
+          <li><a target="_blank" href="https://instagram.com" class="footer__social-link footer__facebook"><img
+                class="footer__icon footer__facebook-icon" src="./image/instagram.png" alt="Facebook"></a></li>
+          <li><a target="_blank" href="https://profi.ru" class="footer__social-link footer__twitter"><img
+                class="footer__icon footer__twitter-icon" src="./image/faviconV2.png" alt="Twitter"></a></li>
         </ul>
       </div>
       <div class="footer__payment-info">
@@ -125,6 +138,7 @@
       </div>
     </div>
   </footer>
+  <script src="./vendor/itc-slider.min.js"></script>
 </body>
 
 </html>

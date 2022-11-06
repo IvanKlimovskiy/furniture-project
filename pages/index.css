@@ -54,3 +54,6 @@
 @import url(../blocks/form-mailing/__title/form-mailing__title.css);
 @import url(../blocks/form-mailing/form-mailing.css);
 @import url(../blocks/main/main.css);
+@import url(../blocks/promo/__items/promo__items.css);
+@import url(../blocks/promo/__item/promo__item.css);
+@import url(../blocks/promo/__wrapper/promo__wrapper.css);
