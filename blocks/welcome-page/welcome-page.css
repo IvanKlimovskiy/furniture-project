@@ -1,5 +1,5 @@
 .welcome-page {
   width: 100%;
   max-width: 1100px;
-  padding-top: 141.4px;
+  padding-top: calc(54px + 54px + 44.6px);
 }
