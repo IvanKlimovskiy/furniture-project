@@ -1,0 +1,17 @@
+.furniture__title-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 32px;
+  margin: 0;
+  background-color: #80A6AD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3;
+  transition: 1s;
+}
+.furniture__title-link:hover {
+  opacity: .6;
+}

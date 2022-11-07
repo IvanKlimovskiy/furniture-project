@@ -25,6 +25,7 @@
 @import url(../blocks/furniture/__image-link/_third/furniture__image_third.css);
 @import url(../blocks/furniture/__image/furniture__image.css);
 @import url(../blocks/furniture/__title/furniture__title.css);
+@import url(../blocks/furniture/__title-link/furniture__title-link.css);
 @import url(../blocks/furniture/furniture.css);
 @import url(../blocks/finished-furniture/__image/_first/finished-furniture__image-link_first.css);
 @import url(../blocks/finished-furniture/__image/_fourth/finished-furniture__image-link_fourth.css);
@@ -36,6 +37,7 @@
 @import url(../blocks/kitchen/image-link/_second/kitchen__image-link_second.css);
 @import url(../blocks/kitchen/image-link/_third/kitchen__image-link_third.css);
 @import url(../blocks/kitchen/__title/kitchen__title.css);
+@import url(../blocks/kitchen/__title-link/kitchen__title-link.css);
 @import url(../blocks/gallery-bedroom/__title/gallery-bedroom__title.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__info/footer__info.css);
