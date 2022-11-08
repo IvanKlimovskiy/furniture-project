@@ -1,0 +1,7 @@
+.about__wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  justify-content: space-between;
+  gap: 3em;
+}
