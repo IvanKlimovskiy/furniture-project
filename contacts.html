@@ -26,7 +26,42 @@
   </header>
 
   <main class="main">
-
+    <section class="contacts">
+      <h1 class="contacts__title">Контакты</h1>
+      <div class="contacts__wrapper">
+        <div class="contacts__info">
+          <h2 class="contacts__info-title">
+            +7 (495) 000-00-00 <br>
+            info@mysite.ru
+          </h2>
+          <p class="contacts__info-text">
+            Это текст. Нажмите один раз и выберите «Редактировать текст» 
+            или просто кликните дважды, 
+            чтобы добавить свое содержание и настроить шрифт. 
+            Текстовый блок можно перетащить в любое место на странице. 
+            Расскажите посетителям сайта о себе подробнее, например, 
+            как вам пришла в голову идея бизнеса.
+          </p>
+        </div>
+        <div class="form-wrapper">
+          <form action="post" class="form">
+            <label class="form__label-name" for="name">
+              <input class="form__input-name" type="text" id="name" placeholder="Имя">
+            </label>
+            <label for="email" class="form__label-email">
+              <input type="email" class="form__input-email" id="email">
+            </label>
+            <label for="number" class="form__label-number">
+              <input type="number" class="form__input-number">
+            </label>
+            <label for="comment">
+              <textarea name="" id="comment" cols="30" rows="10" class="form__comment" placeholder="Добавьте сообщение..."></textarea>
+            </label>
+            <button class="form__submit-button">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
