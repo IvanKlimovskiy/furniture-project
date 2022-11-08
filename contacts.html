@@ -19,7 +19,7 @@
           <li><a class="nav-menu__item" href="./kitchen.html">Кухни</a></li>
           <li><a class="nav-menu__item" href="./finished-furniture.html">Готовая мебель</a></li>
           <li><a class="nav-menu__item" href="./about-us.html">О нас</a></li>
-          <li><a class="nav-menu__item" href="./contacts.html">Контакты</a></li>
+          <li><a class="nav-menu__item nav-menu__item_active" href="./contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -44,19 +44,11 @@
           </p>
         </div>
         <div class="form-wrapper">
-          <form action="post" class="form">
-            <label class="form__label-name" for="name">
-              <input class="form__input-name" type="text" id="name" placeholder="Имя">
-            </label>
-            <label for="email" class="form__label-email">
-              <input type="email" class="form__input-email" id="email">
-            </label>
-            <label for="number" class="form__label-number">
+          <form class="form" action="post" class="form">
+              <input class="form__input-name" type="text" placeholder="Имя">
+              <input type="email" class="form__input-email">
               <input type="number" class="form__input-number">
-            </label>
-            <label for="comment">
-              <textarea name="" id="comment" cols="30" rows="10" class="form__comment" placeholder="Добавьте сообщение..."></textarea>
-            </label>
+              <textarea name="" cols="30" rows="10" class="form__comment" placeholder="Добавьте сообщение..."></textarea>
             <button class="form__submit-button">Отправить</button>
           </form>
         </div>

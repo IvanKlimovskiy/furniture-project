@@ -5,20 +5,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./pages/about-us.css">
+  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="./vendor/itc-slider.min.css">
   <title>Document</title>
 </head>
 
 <body class="page">
   <header class="header">
     <div class="header__wrapper">
-      <div class="header__logo"><a class="header__logo-link" href="./index.html">Формула дизайна</a></div>
+      <div class="header__logo">Формула дизайна</div>
       <nav class="nav-menu">
         <ul class="nav-menu__list">
           <li><a class="nav-menu__item" href="./commercial-furniture.html">Коммерческая мебель</a></li>
           <li><a class="nav-menu__item" href="./kitchen.html">Кухни</a></li>
           <li><a class="nav-menu__item" href="./finished-furniture.html">Готовая мебель</a></li>
-          <li><a class="nav-menu__item nav-menu__item_active" href="./about-us.html">О нас</a></li>
+          <li><a class="nav-menu__item" href="./about-us.html">О нас</a></li>
           <li><a class="nav-menu__item" href="./contacts.html">Контакты</a></li>
         </ul>
       </nav>
@@ -26,63 +27,84 @@
   </header>
 
   <main class="main">
-    <article class="about">
-      <h1 class="about__title">
-        О нас
-      </h1>
-      <div class="about__wrapper">
-        <div class="about__text">
-          <p class="about__heading-paragraph">
-            Здесь будет удачно смотреться текст о ваших услугах. Используйте эту возможность, 
-            чтобы выгодно представить свою компанию клиентам. 
-            Объясните, в чем заключается ваше преимущество перед конкурентами. 
-            Приводите увлекательные факты, цифры и не забудьте про ключевые слова, 
-            по которым ваш сайт найдут в поисковых системах.                 
-          </p>
-          <p class="about__main-paragraph">
-            Здесь будет удачно смотреться текст о ваших услугах. Используйте эту возможность, 
-            чтобы выгодно представить свою компанию клиентам. 
-            Объясните, в чем заключается ваше преимущество перед конкурентами. 
-            Приводите увлекательные факты, цифры и не забудьте про ключевые слова, 
-            по которым ваш сайт найдут в поисковых системах.         
+    <section class="welcome-page">
+      <article class="promo">
+        <div class="promo__text">
+          <h1 class="promo__title"><a href=""></a>
+            ХОРОШИЙ
+            ДИЗАЙН ВИДЕН.
+            ОТЛИЧНЫЙ —
+            НЕЗАМЕТЕН.
+          </h1>
+          <p class="promo__subtitle">
+            Создайте идеальное простанство
           </p>
         </div>
-        <div class="about__image">
-          <img src="./image/about.jpg" alt="Мастерская" class="about__picture">
+        <div class="promo__images itc-slider" data-slider="itc-slider" data-autoplay="true" data-interval="4000">
+          <div class="itc-slider__wrapper">
+            <div class="itc-slider__items promo__items">
+              <div class="itc-slider__item promo__item">
+                <img src="./image/kitchen4.jpg" alt="Кухня" class="promo__image">
+              </div>
+              <div class="itc-slider__item">
+                <img src="./image/finished-furniture2.jpg" alt="Кухня" class="promo__image">
+              </div>
+              <div class="itc-slider__item">
+                <img src="./image/commercial-furniture2.jpg" alt="Кухня" class="promo__image">
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </article>
-    <article class="faq">
-      <h2 class="faq__title">Вопросы и ответы</h2>
-      <ul class="faq__list">
-        <li class="faq__list-item">
-          <h3 class="faq__list-item-title">Как сделать заказ?</h3>
-          <p class="faq__list-item-paragraph">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт.</p>
-        </li>
-        <li class="faq__list-item">
-          <h3 class="faq__list-item-title">Оплата и доставка</h3>
-          <p class="faq__list-item-paragraph">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт.</p>
-        </li>
-        <li class="faq__list-item">
-          <h3 class="faq__list-item-title">Возврат товара и денег</h3>
-          <p class="faq__list-item-paragraph">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт.</p>
-        </li>
-        <li class="faq__list-item">
-          <h3 class="faq__list-item-title">Как отследить заказ?</h3>
-          <p class="faq__list-item-paragraph">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт.</p>
-        </li>
-        <li class="faq__list-item">
-          <h3 class="faq__list-item-title">Политика конфиденциальности</h3>
-          <p class="faq__list-item-paragraph">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт.</p>
-        </li>
-        <li class="faq__list-item">
-          <h3 class="faq__list-item-title">Варианты доставки</h3>
-          <p class="faq__list-item-paragraph">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт.</p>
-        </li>
-      </ul>
-    </article>
+      </article>
+    </section>
+    <section class="gallery">
+      <article class="furniture commercial-furniture">
+        <a class="furniture__title-link" href="./commercial-furniture.html">
+          <h2 class="furniture__title commercial-furniture__title">
+            Коммерческая мебель
+          </h2>
+        </a>
+        <a class="furniture__image-link furniture__image-link_first" href=""><img
+            src="./image/commercial-furniture1.jpg" alt="Стол" class="furniture__image"></a>
+        <a class="furniture__image-link furniture__image-link_second" href=""><img
+            src="./image/commercial-furniture2.jpg" alt="Стол" class="furniture__image"></a>
+        <a class="furniture__image-link furniture__image-link_third" href=""><img
+            src="./image/commercial-furniture3.jpg" alt="Стол" class="furniture__image"></a>
+        <a class="furniture__image-link furniture__image-link_fourth" href=""><img
+            src="./image/commercial-furniture4.jpg" alt="Стол" class="furniture__image"></a>
+      </article>
+      <article class="furniture kitchen">
+        <a class="furniture__title-link kitchen__title-link" href="./kitchen.html">
+          <h2 class="furniture__title kitchen__title">
+            Кухни
+          </h2>
+        </a>
+        <a class="furniture__image-link kitchen__image-link_first" href=""><img src="./image/kitchen1.jpg" alt="Стол"
+            class="furniture__image"></a>
+        <a class="furniture__image-link kitchen__image-link_second" href=""><img src="./image/kitchen2.jpg" alt="Стол"
+            class="furniture__image"></a>
+        <a class="furniture__image-link kitchen__image-link_third" href=""><img src="./image/kitchen3.jpg" alt="Стол"
+            class="furniture__image"></a>
+        <a class="furniture__image-link kitchen__image-link_fourth" href=""><img src="./image/kitchen4.jpg" alt="Стол"
+            class="furniture__image"></a>
+      </article>
+      <article class="furniture finished-furniture">
+        <a class="furniture__title-link finished-furniture__title-link" href="./finished-furniture.html">
+          <h2 class="furniture__title finished-furniture__title">
+            Готовая мебель
+          </h2>
+        </a>
+        <a class="furniture__image-link finished-furniture__image-link_first" href=""><img
+            src="./image/finished-furniture1.jpg" alt="Стол" class="furniture__image"></a>
+        <a class="furniture__image-link finished-furniture__image-link_second" href=""><img
+            src="./image/finished-furniture2.jpg" alt="Стол" class="furniture__image"></a>
+        <a class="furniture__image-link finished-furniture__image-link_third" href=""><img
+            src="./image/finished-furniture3.jpg" alt="Стол" class="furniture__image"></a>
+        <a class="furniture__image-link finished-furniture__image-link_fourth" href=""><img
+            src="./image/finished-furniture4.jpg" alt="Стол" class="furniture__image"></a>
+      </article>
+    </section>
   </main>
-
   <footer class="footer">
     <div class="footer__info">
       <div class="footer__contacts">
@@ -121,7 +143,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="./vendor/itc-slider.min.js"></script>
 </body>
 
 </html>

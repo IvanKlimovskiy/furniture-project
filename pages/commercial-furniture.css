@@ -5,6 +5,7 @@
 @import url(../blocks/header/__wrapper/header__wrapper.css);
 @import url(../blocks/nav-menu/nav-menu.css);
 @import url(../blocks/nav-menu/__item/nav-menu__item.css);
+@import url(../blocks/nav-menu/__item/_active/nav-menu__item_active.css);
 @import url(../blocks/nav-menu/__list/nav-menu__list.css);
 @import url(../blocks/nav-menu/nav-menu.css);
 @import url(../blocks/main/main.css);
