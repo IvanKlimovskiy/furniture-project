@@ -7,7 +7,19 @@
 @import url(../blocks/nav-menu/__list/nav-menu__list.css);
 @import url(../blocks/nav-menu/nav-menu.css);
 @import url(../blocks/main/main.css);
-
+@import url(../blocks/about/__heading-paragraph/about__heading-paragraph.css);
+@import url(../blocks/about/__image/about__image.css);
+@import url(../blocks/about/__main-paragraph/about__main-paragraph.css);
+@import url(../blocks/about/__picture/about__picture.css);
+@import url(../blocks/about/__text/about__text.css);
+@import url(../blocks/about/__title/about__title.css);
+@import url(../blocks/about/about.css);
+@import url(../blocks/faq/__list-item-paragraph/faq__list-item-paragraph.css);
+@import url(../blocks/faq/__list-item-title/faq__list-item-title.css);
+@import url(../blocks/faq/__list-item/faq__list-item.css);
+@import url(../blocks/faq/__list/faq__list.css);
+@import url(../blocks/faq/__title/faq__title.css);
+@import url(../blocks/faq/faq.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__info/footer__info.css);
 @import url(../blocks/footer/__contact-us/footer__contact-us.css);
