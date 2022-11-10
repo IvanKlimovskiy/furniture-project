@@ -1,3 +1,16 @@
 .form__submit-button {
-  
+  cursor: pointer;
+  display: block;
+  align-self: flex-end;
+  width: 138px;
+  height: 35px;
+  background-color: #405357;
+  transition: .3s;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+.form__submit-button:hover {
+  background-color: #D6D6D6;
 }

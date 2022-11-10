@@ -1,3 +1,5 @@
 .contacts__title {
-  
+  font-size: 50px;
+  margin: 0;
+  align-self: flex-start;
 }

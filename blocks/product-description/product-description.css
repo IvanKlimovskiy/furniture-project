@@ -1,0 +1,11 @@
+.product-description {
+  position: relative;
+  padding: 3% 2.5%;
+  display: flex;
+  background-color: #EDEFF0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 60vw;
+  max-height: 75vh;
+  gap: 5%;
+}

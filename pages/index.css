@@ -1,4 +1,6 @@
+/* Подключаем body */
 @import url(../blocks/page/page.css);
+/* Подключаем хедер */
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__wrapper/header__wrapper.css);
@@ -6,7 +8,9 @@
 @import url(../blocks/nav-menu/__item/nav-menu__item.css);
 @import url(../blocks/nav-menu/__list/nav-menu__list.css);
 @import url(../blocks/nav-menu/nav-menu.css);
+/* Главная страница с основным контентом */
 @import url(../blocks/main/main.css);
+/* Подключаем приветсвенный блок */
 @import url(../blocks/welcome-page/welcome-page.css);
 @import url(../blocks/promo/__image/promo__image.css);
 @import url(../blocks/promo/__images/promo__images.css);
@@ -17,6 +21,7 @@
 @import url(../blocks/promo/__items/promo__items.css);
 @import url(../blocks/promo/__item/promo__item.css);
 @import url(../blocks/promo/__wrapper/promo__wrapper.css);
+/* Подключаем галерею  */
 @import url(../blocks/gallery/gallery.css);
 @import url(../blocks/furniture/__image-link/furniture__image-link.css);
 @import url(../blocks/furniture/__image-link/_first/furniture__image-link_first.css);
@@ -38,7 +43,7 @@
 @import url(../blocks/kitchen/image-link/_third/kitchen__image-link_third.css);
 @import url(../blocks/kitchen/__title/kitchen__title.css);
 @import url(../blocks/kitchen/__title-link/kitchen__title-link.css);
-@import url(../blocks/gallery-bedroom/__title/gallery-bedroom__title.css);
+/* Подключаем футер */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__info/footer__info.css);
 @import url(../blocks/footer/__contact-us/footer__contact-us.css);
@@ -52,9 +57,25 @@
 @import url(../blocks/footer/__payment-system/footer__payment-system.css);
 @import url(../blocks/footer/__payment-systems/footer__payment-systems.css);
 @import url(../blocks/footer/__payment-accept/footer__payment-accept.css);
+/* Подключаем блок с рассылкой на почту */
 @import url(../blocks/form-mailing/__button/form-mailing__button.css);
 @import url(../blocks/form-mailing/__input-email/form-mailing__input-email.css);
 @import url(../blocks/form-mailing/__label-email/form-mailing__label-email.css);
 @import url(../blocks/form-mailing/__title/form-mailing__title.css);
 @import url(../blocks/form-mailing/form-mailing.css);
+/* Подключаем попап */
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/__close-button/popup__close-button.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/product-description/__image-wrapper/product-description__image-wrapper.css);
+@import url(../blocks/product-description/__image/product-description__image.css);
+@import url(../blocks/product-description/__info/product-description__info.css);
+@import url(../blocks/product-description/__text/product-description__text.css);
+@import url(../blocks/product-description/__title/product-description__title.css);
+@import url(../blocks/product-description/product-description.css);
+
+
+
+
+
 

@@ -1,4 +1,5 @@
 @import url(../blocks/page/page.css);
+@import url(../blocks/page/_contacts/page_contacts.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__logo-link/header__logo-link.css);
@@ -16,12 +17,17 @@
 @import url(../blocks/contacts/__title/contacts__title.css);
 @import url(../blocks/contacts/__wrapper/contacts__wrapper.css);
 @import url(../blocks/form-wrapper/form-wrapper.css);
+@import url(../blocks/form/__input-name/form__input-name.css);
+@import url(../blocks/form/__input-email/form__input-email.css);
+@import url(../blocks/form/__input-number/form__input-number.css);
 @import url(../blocks/form/__comment/form__comment.css);
 @import url(../blocks/form/__input-email/form__input-email.css);
 @import url(../blocks/form/__input-name/form__input-name.css);
 @import url(../blocks/form/__input-number/form__input-number.css);
 @import url(../blocks/form/__submit-button/form__submit-button.css);
 @import url(../blocks/form/form.css);
+@import url(../blocks/form-wrapper/form-wrapper.css);
+@import url(../blocks/form/__comment/form__comment.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__info/footer__info.css);
 @import url(../blocks/footer/__contact-us/footer__contact-us.css);

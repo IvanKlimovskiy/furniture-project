@@ -1,3 +1,8 @@
 .form__comment {
-  
+  padding: 6px 0 0 24px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  margin-bottom: 8px;
 }
