@@ -4,3 +4,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+@media (max-width: 557px) {
+  .promo {
+    display: flex;
+    flex-direction: column;
+  }
+}

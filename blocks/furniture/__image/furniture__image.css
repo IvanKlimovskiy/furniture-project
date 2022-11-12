@@ -9,3 +9,16 @@
 .furniture__image:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 557px) {
+  .furniture__image {
+    aspect-ratio: 1/1.5;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .furniture__image:hover {
+    transform: scale(1);
+  }
+}

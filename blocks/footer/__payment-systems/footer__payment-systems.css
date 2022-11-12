@@ -1,9 +1,15 @@
 .footer__payment-systems {
   padding: 0;
-  margin: 10px 0 0;
+  margin: 20px 0 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
   width: 100%;
   min-width: 160px;
+}
+
+@media (max-width: 810px) {
+  .footer__payment-systems {
+    max-width: 160px;
+  }
 }

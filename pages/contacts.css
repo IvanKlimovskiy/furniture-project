@@ -17,18 +17,12 @@
 @import url(../blocks/contacts/__info/contacts__info.css);
 @import url(../blocks/contacts/__title/contacts__title.css);
 @import url(../blocks/contacts/__wrapper/contacts__wrapper.css);
-@import url(../blocks/form-wrapper/form-wrapper.css);
-@import url(../blocks/form/__input-name/form__input-name.css);
-@import url(../blocks/form/__input-email/form__input-email.css);
-@import url(../blocks/form/__input-number/form__input-number.css);
-@import url(../blocks/form/__comment/form__comment.css);
-@import url(../blocks/form/__input-email/form__input-email.css);
-@import url(../blocks/form/__input-name/form__input-name.css);
-@import url(../blocks/form/__input-number/form__input-number.css);
-@import url(../blocks/form/__submit-button/form__submit-button.css);
-@import url(../blocks/form/form.css);
-@import url(../blocks/form-wrapper/form-wrapper.css);
-@import url(../blocks/form/__comment/form__comment.css);
+@import url(../blocks/contacts/__hours/contacts__hours.css);
+@import url(../blocks/contacts/__days/contacts__days.css);
+@import url(../blocks/contacts/__day/contacts__day.css);
+/* Подключить карту */
+@import url(../blocks/yandex-map/yandex-map.css);
+
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__info/footer__info.css);
 @import url(../blocks/footer/__contact-us/footer__contact-us.css);
@@ -42,8 +36,16 @@
 @import url(../blocks/footer/__payment-system/footer__payment-system.css);
 @import url(../blocks/footer/__payment-systems/footer__payment-systems.css);
 @import url(../blocks/footer/__payment-accept/footer__payment-accept.css);
-@import url(../blocks/form-mailing/__button/form-mailing__button.css);
-@import url(../blocks/form-mailing/__input-email/form-mailing__input-email.css);
-@import url(../blocks/form-mailing/__label-email/form-mailing__label-email.css);
-@import url(../blocks/form-mailing/__title/form-mailing__title.css);
-@import url(../blocks/form-mailing/form-mailing.css);
+/* Подключаем блок с обратной связью */
+@import url(../blocks/form-wrapper/form-wrapper.css);
+@import url(../blocks/form/__title/form__title.css);
+@import url(../blocks/form/__input-name/form__input-name.css);
+@import url(../blocks/form/__input-email/form__input-email.css);
+@import url(../blocks/form/__input-number/form__input-number.css);
+@import url(../blocks/form/__comment/form__comment.css);
+@import url(../blocks/form/__input-email/form__input-email.css);
+@import url(../blocks/form/__input-name/form__input-name.css);
+@import url(../blocks/form/__input-number/form__input-number.css);
+@import url(../blocks/form/__submit-button/form__submit-button.css);
+@import url(../blocks/form/form.css);
+@import url(../blocks/form-wrapper/form-wrapper.css);

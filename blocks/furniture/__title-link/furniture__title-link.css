@@ -3,7 +3,7 @@
   color: white;
   text-decoration: none;
   text-align: center;
-  font-size: 32px;
+  font-size: 28px;
   margin: 0;
   background-color: #80A6AD;
   display: flex;
@@ -23,3 +23,8 @@
   }
 }
 
+@media (max-width: 557px) {
+  .furniture__title-link {
+    padding: 30px 0;
+  }
+}

@@ -6,13 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/contacts.css">
-  <title>Document</title>
+  <title>Формула Дизайна</title>
 </head>
 
 <body class="page">
   <header class="header">
     <div class="header__wrapper">
-      <a class="header__logo-link" href="./index.html"><div class="header__logo-wrapper"><img class="header__logo" src="./image/logoza-ru-photoroom-1.png" alt="Логотип"></div></a>
+      <a class="header__logo-link" href="./index.html">
+        <div class="header__logo-wrapper"><img class="header__logo" src="./image/logoza-ru-photoroom-1.png"
+            alt="Логотип"></div>
+      </a>
       <nav class="nav-menu">
         <ul class="nav-menu__list">
           <li><a class="nav-menu__item" href="./commercial-furniture.html">Коммерческая мебель</a></li>
@@ -31,27 +34,34 @@
       <div class="contacts__wrapper">
         <div class="contacts__info">
           <h2 class="contacts__info-title">
-            +7 (495) 000-00-00 <br>
-            info@mysite.ru
+            +7 (812) 986-02-02
           </h2>
           <p class="contacts__info-text">
-            Это текст. Нажмите один раз и выберите «Редактировать текст» 
-            или просто кликните дважды, 
-            чтобы добавить свое содержание и настроить шрифт. 
-            Текстовый блок можно перетащить в любое место на странице. 
-            Расскажите посетителям сайта о себе подробнее, например, 
-            как вам пришла в голову идея бизнеса.
+            Мы располагаемся по адресу: Санкт-Петербург, посёлок Парголово, дорога в Каменку, 12.
+          </p>
+          <p class="contacts__hours">
+            <ul class="contacts__days">
+              <li class="contacts__day">Понедельник: 10:00 - 20:00
+              </li>
+              <li class="contacts__day">Вторник: 10:00 - 20:00
+              </li>
+              <li class="contacts__day">Среда: 10:00 - 20:00
+              </li>
+              <li class="contacts__day">Четверг: 10:00 - 20:00
+              </li>
+              <li class="contacts__day">Пятница: 10:00 - 20:00
+              </li>
+              <li class="contacts__day">Суббота: Закрыто
+              </li>
+              <li class="contacts__day">Воскресенье: Закрыто
+              </li>
+            </ul>
           </p>
         </div>
-        <div class="form-wrapper">
-          <form class="form" action="post" class="form">
-              <input class="form__input-name" type="text" placeholder="Имя">
-              <input type="email" class="form__input-email" placeholder="Эл. почта">
-              <input type="number" class="form__input-number" placeholder="Телефон">
-              <textarea name="" cols="30" rows="10" class="form__comment" placeholder="Добавьте сообщение..."></textarea>
-            <button class="form__submit-button">Отправить</button>
-          </form>
-        </div>
+        <iframe class="yandex-map"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae85f37d0f51706c1c37657f1be5f3b676b68c0f796bd13d4dc538e1815806232&amp;source=constructor"
+          width="500" height="400">
+        </iframe>
       </div>
     </section>
   </main>
@@ -83,18 +93,18 @@
               alt="Master Card"></li>
         </ul>
       </div>
-      <div class="footer__form-container">
-        <form class="form-mailing">
-          <h3 class="form-mailing__title">Подпишитесь на рассылку</h3>
-          <label class="form-mailing__label-email" for="email">
-            <input class="form-mailing__input-email" type="email" id="email" placeholder="Добавьте эл. почту">
-          </label>
-          <button type="submit" class="form-mailing__button">ОК</button>
+      <div class="form-wrapper">
+        <form class="form" action="post" class="form">
+          <h4 class="form__title">Оставьте заявку и мы Вам перезвоним</h4>
+          <input class="form__input-name" type="text" placeholder="Имя">
+          <input type="email" class="form__input-email" placeholder="Эл. почта">
+          <input type="number" class="form__input-number" placeholder="Телефон">
+          <button class="form__submit-button">Отправить</button>
         </form>
       </div>
     </div>
   </footer>
-</div>
+  </div>
 </body>
 
 </html>

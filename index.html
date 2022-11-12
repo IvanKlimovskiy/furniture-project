@@ -15,6 +15,9 @@
     <div class="header__wrapper">
       <div class="header__logo-wrapper"><img class="header__logo" src="./image/logoza-ru-photoroom-1.png" alt="Логотип"></div>
       <nav class="nav-menu">
+        <button class="header__close-menu-button">
+          <img src="./image/close-button.svg" alt="x" class="header__close-menu-image">
+        </button>
         <ul class="nav-menu__list">
           <li><a class="nav-menu__item" href="./commercial-furniture.html">Коммерческая мебель</a></li>
           <li><a class="nav-menu__item" href="./kitchen.html">Кухни</a></li>
@@ -23,6 +26,9 @@
           <li><a class="nav-menu__item" href="./contacts.html">Контакты</a></li>
         </ul>
       </nav>
+      <div class="header__burger-menu">
+        <span class="header__burger-line"></span>
+      </div>
     </div>
   </header>
 
@@ -107,26 +113,38 @@
   </main>
   <footer class="footer">
     <div class="footer__info">
-      <div class="footer__contacts">
-        <h3 class="footer__contact-us">Свяжитесь с нами</h3>
-        <p class="footer__number">+7 (495) 000-00-00</p>
-        <p class="footer__email">info@mysite.ru</p>
-        <ul class="footer__social-links">
-          <li><a target="_blank" href="https://vk.com/" class="footer__social-link footer__vk"><img
-                class="footer__icon footer__vk-icon" src="./image/vk.png" alt="Вконтакте"></a></li>
-          <li><a target="_blank" href="https://instagram.com" class="footer__social-link footer__facebook"><img
-                class="footer__icon footer__facebook-icon" src="./image/instagram.png" alt="Facebook"></a></li>
-          <li><a target="_blank" href="https://profi.ru" class="footer__social-link footer__twitter"><img
-                class="footer__icon footer__twitter-icon" src="./image/faviconV2.png" alt="Twitter"></a></li>
-        </ul>
-      </div>
-      <div class="footer__form-container">
-        <form class="form-mailing">
-          <h3 class="form-mailing__title">Подпишитесь на рассылку</h3>
-          <label class="form-mailing__label-email" for="email">
-            <input class="form-mailing__input-email" type="email" id="email" placeholder="Добавьте эл. почту">
-          </label>
-          <button type="submit" class="form-mailing__button">ОК</button>
+        <div class="footer__contacts">
+          <h3 class="footer__contact-us">Свяжитесь с нами</h3>
+          <p class="footer__number">+7 (495) 000-00-00</p>
+          <p class="footer__email">info@mysite.ru</p>
+          <ul class="footer__social-links">
+            <li><a target="_blank" href="https://vk.com/tuning_vashego_doma" class="footer__social-link footer__vk"><img
+                  class="footer__icon footer__vk-icon" src="./image/vk.png" alt="Вконтакте"></a></li>
+            <li><a target="_blank" href="https://instagram.com" class="footer__social-link footer__facebook"><img
+                  class="footer__icon footer__facebook-icon" src="./image/instagram.png" alt="Facebook"></a></li>
+            <li><a target="_blank" href="https://profi.ru" class="footer__social-link footer__twitter"><img
+                  class="footer__icon footer__twitter-icon" src="./image/faviconV2.png" alt="Twitter"></a></li>
+          </ul>
+        </div>
+        <div class="footer__payment-info">
+          <h3 class="footer__payment-accept">Мы принимаем</h3>
+          <ul class="footer__payment-systems">
+            <li><img class="footer__payment-system footer__visa-payment-system" src="./image/visa.png" alt="Visa"></li>
+            <li><img class="footer__payment-system footer__paypal-payment-system" src="./image/paypal.png" alt="PayPal">
+            </li>
+            <li><img class="footer__payment-system footer__american-express-payment-system"
+                src="./image/american-express.png" alt="American Express"></li>
+            <li><img class="footer__payment-system footer__master-card-payment-system" src="./image/master-card.png"
+                alt="Master Card"></li>
+          </ul>
+        </div>
+      <div class="form-wrapper">
+        <form class="form" action="post" class="form">
+            <h4 class="form__title">Оставьте заявку и мы Вам перезвоним</h4>
+            <input class="form__input-name" type="text" placeholder="Имя">
+            <input type="email" class="form__input-email" placeholder="Эл. почта">
+            <input type="number" class="form__input-number" placeholder="Телефон">
+          <button class="form__submit-button">Отправить</button>
         </form>
       </div>
     </div>

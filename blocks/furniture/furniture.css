@@ -7,3 +7,17 @@
   grid-template-rows: 150px 150px 150px 150px;
   gap: 20px;
 }
+
+@media (max-width: 768px) {
+  .furniture {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+  }
+}
+
+@media (max-width: 557px) {
+  .furniture {
+    display: flex;
+    flex-direction: column;
+  }
+}

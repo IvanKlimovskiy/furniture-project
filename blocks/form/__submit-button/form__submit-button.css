@@ -1,9 +1,8 @@
 .form__submit-button {
+  padding: 5px 0;
   cursor: pointer;
   display: block;
-  align-self: flex-end;
-  width: 138px;
-  height: 35px;
+  width: 100%;
   background-color: #405357;
   transition: .3s;
   border: none;
@@ -13,4 +12,5 @@
 
 .form__submit-button:hover {
   background-color: #D6D6D6;
+  color: black;
 }

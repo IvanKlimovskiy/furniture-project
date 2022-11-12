@@ -10,3 +10,9 @@
     padding: 226.39px 24px 0;
   }
 }
+
+@media (max-width: 768px) {
+  .welcome-page  {
+    padding: 0px 24px 0;
+  }
+}

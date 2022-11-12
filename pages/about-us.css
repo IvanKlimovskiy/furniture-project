@@ -37,8 +37,16 @@
 @import url(../blocks/footer/__payment-system/footer__payment-system.css);
 @import url(../blocks/footer/__payment-systems/footer__payment-systems.css);
 @import url(../blocks/footer/__payment-accept/footer__payment-accept.css);
-@import url(../blocks/form-mailing/__button/form-mailing__button.css);
-@import url(../blocks/form-mailing/__input-email/form-mailing__input-email.css);
-@import url(../blocks/form-mailing/__label-email/form-mailing__label-email.css);
-@import url(../blocks/form-mailing/__title/form-mailing__title.css);
-@import url(../blocks/form-mailing/form-mailing.css);
+/* Подключаем блок с обратной связью */
+@import url(../blocks/form-wrapper/form-wrapper.css);
+@import url(../blocks/form/__title/form__title.css);
+@import url(../blocks/form/__input-name/form__input-name.css);
+@import url(../blocks/form/__input-email/form__input-email.css);
+@import url(../blocks/form/__input-number/form__input-number.css);
+@import url(../blocks/form/__comment/form__comment.css);
+@import url(../blocks/form/__input-email/form__input-email.css);
+@import url(../blocks/form/__input-name/form__input-name.css);
+@import url(../blocks/form/__input-number/form__input-number.css);
+@import url(../blocks/form/__submit-button/form__submit-button.css);
+@import url(../blocks/form/form.css);
+@import url(../blocks/form-wrapper/form-wrapper.css);
