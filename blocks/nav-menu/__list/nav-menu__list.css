@@ -4,3 +4,9 @@
   list-style: none;
   justify-content: space-between;
 }
+
+@media (max-width: 960px) {
+  .nav-menu__list {
+    padding: 50px 0 0;
+  }
+}

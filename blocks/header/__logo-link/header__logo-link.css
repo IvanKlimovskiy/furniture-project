@@ -1,4 +1,5 @@
 .header__logo-link {
+  display: block;
   text-decoration:  none;
   color: inherit;
 }

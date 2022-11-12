@@ -1,5 +1,12 @@
 .welcome-page {
   width: 100%;
-  max-width: 1100px;
-  padding-top: calc(54px + 54px + 44.6px);
+  box-sizing: border-box;
+  max-width: 1148px;
+  padding: 153.39px 24px 0;
+}
+
+@media (max-width: 960px) {
+  .welcome-page  {
+    padding: 226.39px 24px 0;
+  }
 }

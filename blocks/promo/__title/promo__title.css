@@ -2,3 +2,9 @@
   margin: 0;
   font-size: 52px;
 }
+
+@media (max-width: 1148px) {
+  .promo__title {
+    font-size: 5vw;
+  }
+}

@@ -15,3 +15,11 @@
 .furniture__title-link:hover {
   opacity: .6;
 }
+
+@media (max-width: 768px) {
+  .furniture__title-link {
+    grid-column: 1/5;
+    grid-row: 1;
+  }
+}
+

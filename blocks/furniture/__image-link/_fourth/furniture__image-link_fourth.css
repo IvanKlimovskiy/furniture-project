@@ -1,3 +1,10 @@
 .furniture__image-link_fourth {
   grid-row: 2/5;
 }
+
+@media (max-width: 768px) {
+  .furniture__image-link_fourth {
+    grid-column: 3/5;
+    grid-row: 4/6;
+  }
+}

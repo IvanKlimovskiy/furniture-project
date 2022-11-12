@@ -2,3 +2,9 @@
   max-width: 800px;
   width: 100%;
 }
+
+@media (max-width: 960px) {
+  .nav-menu {
+    max-width: 100%;
+  }
+}
