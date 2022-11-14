@@ -32,13 +32,13 @@
 @import url(../blocks/faq/__title/faq__title.css);
 @import url(../blocks/faq/faq.css);
 @import url(../blocks/accordion/__button/accordion__button.css);
-@import url("../blocks/accordion/__button/_open/accordion__button_open.css");
-@import url("../blocks/accordion/__content/accordion__content.css");
-@import url("../blocks/accordion/__image-title-wrapper/accordion__image-title-wrapper.css");
-@import url("../blocks/accordion/__image/accordion__image.css");
-@import url("../blocks/accordion/__item/accordion__item.css");
-@import url("../blocks/accordion/__title-info/accordion__title-info.css");
-@import url("../blocks/accordion/accordion.css");
+@import url(../blocks/accordion/__button/_open/accordion__button_open.css);
+@import url(../blocks/accordion/__content/accordion__content.css);
+@import url(../blocks/accordion/__image-title-wrapper/accordion__image-title-wrapper.css);
+@import url(../blocks/accordion/__image/accordion__image.css);
+@import url(../blocks/accordion/__item/accordion__item.css);
+@import url(../blocks/accordion/__title-info/accordion__title-info.css);
+@import url(../blocks/accordion/accordion.css);
 /* Подключаем футер */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__info/footer__info.css);
