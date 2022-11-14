@@ -13,13 +13,13 @@ function closePopup(popup) {
   popup.classList.remove("popup_opened");
 }
 
-buttonClosePopup.addEventListener("click", () => {
-  closePopup(popup);
-});
+// buttonClosePopup.addEventListener("click", () => {
+//   closePopup(popup);
+// });
 
-imageLink.addEventListener("click", () => {
-  openPopup(popup);
-});
+// imageLink.addEventListener("click", () => {
+//   openPopup(popup);
+// });
 
 buttonBurgerMenu.addEventListener('click', () => {
   navigationMenu.style.left = '0';
