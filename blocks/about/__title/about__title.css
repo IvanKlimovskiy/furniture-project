@@ -1,5 +1,12 @@
 .about__title {
+  padding: 48px 0 48px;
   font-size: 48px;
-  margin: 0 0 40px;
+  margin: 0;
   align-self: flex-start;
+}
+
+@media (max-width: 465px) {
+  .about__title {
+    font-size: 36px;
+  }
 }
