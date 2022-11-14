@@ -8,7 +8,7 @@
 @import url(../blocks/header/__logo-wrapper/header__logo-wrapper.css);
 @import url(../blocks/header/__wrapper/header__wrapper.css);
 /* Подключаем навигационное меню */
-@import url(../blocks/);
+@import url(../blocks/header/__close-menu-button/header__close-menu-button.css);
 @import url(../blocks/nav-menu/nav-menu.css);
 @import url(../blocks/nav-menu/__item/nav-menu__item.css);
 @import url(../blocks/nav-menu/__list/nav-menu__list.css);
