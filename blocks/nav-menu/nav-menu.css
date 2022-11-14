@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .nav-menu {
     max-width: 100%;
   }
@@ -18,7 +18,6 @@
     height: 100%;
     background-color: #80A6AD;
     z-index: 20;
-    overflow-y: scroll;
     overflow-x: hidden;
     transition: ease;
     transition-duration: 0.3s;
