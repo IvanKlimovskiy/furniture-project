@@ -1,8 +1,27 @@
 .about {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 1100px;
-  padding-top: 181.4px;
+  max-width: 1148px;
+  padding: 153.4px 24px 0;
+}
+
+@media (max-width: 1024px) {
+  .about {
+    padding: 226.06px 24px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 0 24px 0;
+  }
+}
+
+@media (max-width: 557px) {
+  .about {
+    padding: 0 12px 0;
+  }
 }
