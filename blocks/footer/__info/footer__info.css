@@ -19,6 +19,7 @@
   .footer__info {
     display: flex;
     flex-direction: column;
-    gap: 40px
+    gap: 40px;
+    padding: 0 12px 0;
   }
 }

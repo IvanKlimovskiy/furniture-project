@@ -15,3 +15,9 @@
     align-items: center;
   }
 }
+
+@media (max-width: 557px) {
+  .header__wrapper {
+    padding: 0 12px 0;
+  }
+}

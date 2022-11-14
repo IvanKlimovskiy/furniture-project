@@ -16,3 +16,9 @@
     padding: 0px 24px 0;
   }
 }
+
+@media (max-width: 557px) {
+  .welcome-page  {
+    padding: 0px 12px 0;
+  }
+}
