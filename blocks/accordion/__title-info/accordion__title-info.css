@@ -1,0 +1,13 @@
+.accordion__title-info {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+@media screen and (max-width: 565px) {
+  .accordion__title-info {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
