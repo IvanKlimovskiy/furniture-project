@@ -1,15 +1,25 @@
+/* Подключаем body */
 @import url(../blocks/page/page.css);
+/* Подулючаем шрифты */
+@import url(../vendor/fonts/fonts.css);
+/* Подключаем хедер */
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
-@import url(../blocks/header/__logo-wrapper/header__logo-wrapper.css);
 @import url(../blocks/header/__logo-link/header__logo-link.css);
+@import url(../blocks/header/__logo-wrapper/header__logo-wrapper.css);
 @import url(../blocks/header/__wrapper/header__wrapper.css);
+/* Подключаем навигационное меню */
+@import url(../blocks/header/__close-menu-button/header__close-menu-button.css);
 @import url(../blocks/nav-menu/nav-menu.css);
 @import url(../blocks/nav-menu/__item/nav-menu__item.css);
-@import url(../blocks/nav-menu/__item/_active/nav-menu__item_active.css);
 @import url(../blocks/nav-menu/__list/nav-menu__list.css);
 @import url(../blocks/nav-menu/nav-menu.css);
+/* Подключаем меню в виде бургера */
+@import url(../blocks/header/__burger-menu/header__burger-menu.css);
+@import url(../blocks/header/__burger-line/header__burger-line.css);
+/* Подключаем стили основного контента */
 @import url(../blocks/main/main.css);
+/* Подключаем стили галереи */
 @import url(../blocks/goods/goods.css);
 @import url(../blocks/goods/__description/goods__description.css);
 @import url(../blocks/goods/__item-link/goods__item-link.css);
@@ -17,7 +27,9 @@
 @import url(../blocks/goods/__item/goods__item.css);
 @import url(../blocks/goods/__list/goods__list.css);
 @import url(../blocks/goods/__title/goods__title.css);
+/* Подключаем футер */
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__wrapper/footer__wrapper.css);
 @import url(../blocks/footer/__info/footer__info.css);
 @import url(../blocks/footer/__contact-us/footer__contact-us.css);
 @import url(../blocks/footer/__contacts/footer__contacts.css);

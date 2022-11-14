@@ -1,0 +1,4 @@
+.accordion__button_open {
+  transition: 1s;
+  transform: rotate(45deg);
+}

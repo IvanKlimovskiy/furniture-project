@@ -1,5 +1,18 @@
 .goods__title {
+  padding: 48px 0;
   font-size: 48px;
   margin: 0;
   align-self: flex-start;
+}
+
+@media (max-width: 603px) {
+  .goods__title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 465px) {
+  .goods__title {
+    font-size: 24px;
+  }
 }
