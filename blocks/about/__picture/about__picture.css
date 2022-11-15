@@ -1,4 +1,6 @@
 .about__picture {
   display: block;
   width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/0.9;
 }

@@ -1,3 +1,5 @@
 .contacts__info-text {
   font-size: 24px;
+  margin: 0;
+  padding: 24px 0;
 }

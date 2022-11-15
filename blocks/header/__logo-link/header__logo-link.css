@@ -2,4 +2,7 @@
   display: block;
   text-decoration:  none;
   color: inherit;
+  max-width: 200px;
+  margin-right: 60px;
+  align-self: start;
 }
