@@ -83,12 +83,9 @@
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__close-button/popup__close-button.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
-@import url(../blocks/product-description/__image-wrapper/product-description__image-wrapper.css);
-@import url(../blocks/product-description/__image/product-description__image.css);
-@import url(../blocks/product-description/__info/product-description__info.css);
-@import url(../blocks/product-description/__text/product-description__text.css);
-@import url(../blocks/product-description/__title/product-description__title.css);
-@import url(../blocks/product-description/product-description.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__image/popup__image.css);
+@import url(../blocks/popup/_image/popup_image.css);
 
 
 
