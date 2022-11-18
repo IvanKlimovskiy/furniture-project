@@ -40,9 +40,9 @@
       </h1>
       <div class="goods__list">
         <article class="goods__item">
-          <a class="goods__item-link" href="#">
+          <div class="goods__item-link">
             <img class="goods__picture" src="./image/finished-furniture1.jpg" alt="Готовая мебель">
-          </a>
+          </div>
           <p class="goods__price">20 000 руб.</p>
           <p class="goods__description">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -52,9 +52,9 @@
           </p>
         </article>
         <article class="goods__item">
-          <a class="goods__item-link" href="#">
+          <div class="goods__item-link">
             <img class="goods__picture" src="./image/finished-furniture2.jpg" alt="Готовая мебель">
-          </a>
+          </div>
           <p class="goods__price">20 000 руб.</p>
           <p class="goods__description">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -64,9 +64,9 @@
           </p>
         </article>
         <article class="goods__item">
-          <a class="goods__item-link" href="#">
+          <div class="goods__item-link">
             <img class="goods__picture" src="./image/finished-furniture3.jpg" alt="Готовая мебель">
-          </a>
+          </div>
           <p class="goods__price">20 000 руб.</p>
           <p class="goods__description">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -76,9 +76,9 @@
           </p>
         </article>
         <article class="goods__item">
-          <a class="goods__item-link" href="#">
+          <div class="goods__item-link">
             <img class="goods__picture" src="./image/finished-furniture4.jpg" alt="Готовая мебель">
-          </a>
+          </div>
           <p class="goods__price">20 000 руб.</p>
           <p class="goods__description">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -88,9 +88,9 @@
           </p>
         </article>
         <article class="goods__item">
-          <a class="goods__item-link" href="#">
+          <div class="goods__item-link">
             <img class="goods__picture" src="./image/finished-furniture1.jpg" alt="Готовая мебель">
-          </a>
+          </div>
           <p class="goods__price">20 000 руб.</p>
           <p class="goods__description">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -100,9 +100,9 @@
           </p>
         </article>
         <article class="goods__item">
-          <a class="goods__item-link" href="#">
+          <div class="goods__item-link">
             <img class="goods__picture" src="./image/finished-furniture2.jpg" alt="Готовая мебель">
-          </a>
+          </div>
           <p class="goods__price">20 000 руб.</p>
           <p class="goods__description">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -112,9 +112,9 @@
           </p>
         </article>
         <article class="goods__item">
-          <a class="goods__item-link" href="#">
+          <div class="goods__item-link">
             <img class="goods__picture" src="./image/finished-furniture3.jpg" alt="Готовая мебель">
-          </a>
+          </div>
           <p class="goods__price">20 000 руб.</p>
           <p class="goods__description">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -124,9 +124,9 @@
           </p>
         </article>
         <article class="goods__item">
-          <a class="goods__item-link" href="#">
+          <div class="goods__item-link">
             <img class="goods__picture" src="./image/finished-furniture4.jpg" alt="Готовая мебель">
-          </a>
+          </div>
           <p class="goods__description">
           <p class="goods__price">20 000 руб.</p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -178,7 +178,14 @@
       </div>
     </div>
   </footer>
-  <script src="./src/script.js"></script>
+  <div class="popup">
+    <div class="popup__container">
+      <button type="button" aria-label="Закрыть" class="popup__close-button"></button>
+      <img class="popup__image" src="" alt="">
+      <h2 class="popup__title"></h2>
+    </div>
+  </div>
+  <script src="./src/popup-goods.js"></script>
 </body>
 
 </html>
