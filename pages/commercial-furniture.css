@@ -29,7 +29,6 @@
 @import url(../blocks/goods/__title/goods__title.css);
 /* Подключаем футер */
 @import url(../blocks/footer/footer.css);
-@import url(../blocks/footer/__wrapper/footer__wrapper.css);
 @import url(../blocks/footer/__info/footer__info.css);
 @import url(../blocks/footer/__contact-us/footer__contact-us.css);
 @import url(../blocks/footer/__contacts/footer__contacts.css);
