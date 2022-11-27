@@ -1,0 +1,19 @@
+.welcome-page {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1148px;
+  padding: 0 24px 0;
+  padding-top: $padding-top-header;
+
+  @media (max-width: 1024px) {
+    padding: 226.39px 24px 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0px 24px 0;
+  }
+
+  @media (max-width: 557px) {
+    padding: 0px 12px 0;
+  }
+}

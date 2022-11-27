@@ -1,0 +1,10 @@
+.yandex-map {
+  border: none;
+  grid-row: 1;
+  width: 100%;
+  height: 500px;
+
+  @media (max-width: 420px) {
+    height: 350px;
+  }
+}
