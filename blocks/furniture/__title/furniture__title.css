@@ -1,9 +1,0 @@
-.furniture__title {
-  margin: 0;
-}
-
-@media (max-width: 420px) {
-  .furniture__title {
-    font-size: 32px;
-  }
-}

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./dist/styles/pages/contacts.css">
+  <link rel="stylesheet" href="./dist/styles/pages/cabinets.css">
   <title>Формула Дизайна</title>
 </head>
 
@@ -33,43 +33,58 @@
       </div>
     </div>
   </header>
-
+  <!-- Основной контент -->
   <main class="content">
-    <section class="contacts">
-      <h1 class="contacts__title">Контакты</h1>
-      <div class="contacts__wrapper">
-        <div class="contacts__info">
-          <h2 class="contacts__info-title">
-            +7 (812) 986-02-02
-          </h2>
-          <p class="contacts__info-text">
-            Мы располагаемся по адресу: Санкт-Петербург, Выборгское шоссе 369/6, ТЦ Паргос.
-          </p>
-          <p class="contacts__hours">
-          <ul class="contacts__days">
-            <li class="contacts__day">Понедельник: 10:00 - 20:00
-            </li>
-            <li class="contacts__day">Вторник: 10:00 - 20:00
-            </li>
-            <li class="contacts__day">Среда: 10:00 - 20:00
-            </li>
-            <li class="contacts__day">Четверг: 10:00 - 20:00
-            </li>
-            <li class="contacts__day">Пятница: 10:00 - 20:00
-            </li>
-            <li class="contacts__day">Суббота: 10:00 - 17:00
-            </li>
-            <li class="contacts__day">Воскресенье: 10:00 - 17:00
-            </li>
-          </ul>
-          </p>
-        </div>
-        <iframe class="yandex-map"
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae85f37d0f51706c1c37657f1be5f3b676b68c0f796bd13d4dc538e1815806232&amp;source=constructor">
-        </iframe>
+    <!-- Секция с товарами -->
+    <section class="goods">
+      <h1 class="goods__title">
+        Шкафы
+      </h1>
+      <div class="goods__list">
+        <article class="goods__item">
+          <div class="goods__image-wrapper">
+            <img class="goods__image" src="./image/commercial-furniture1.jpg" alt="Коммерческая мебель">
+          </div>
+        </article>
+        <article class="goods__item">
+          <div class="goods__image-wrapper">
+            <img class="goods__image" src="./image/commercial-furniture2.jpg" alt="Коммерческая мебель">
+          </div>
+        </article>
+        <article class="goods__item">
+          <div class="goods__image-wrapper">
+            <img class="goods__image" src="./image/commercial-furniture3.jpg" alt="Коммерческая мебель">
+          </div>
+        </article>
+        <article class="goods__item">
+          <div class="goods__image-wrapper">
+            <img class="goods__image" src="./image/commercial-furniture4.jpg" alt="Коммерческая мебель">
+          </div>
+        </article>
+        <article class="goods__item">
+          <div class="goods__image-wrapper">
+            <img class="goods__image" src="./image/commercial-furniture1.jpg" alt="Коммерческая мебель">
+          </div>
+        </article>
+        <article class="goods__item">
+          <div class="goods__image-wrapper">
+            <img class="goods__image" src="./image/commercial-furniture2.jpg" alt="Коммерческая мебель">
+          </div>
+        </article>
+        <article class="goods__item">
+          <div class="goods__image-wrapper">
+            <img class="goods__image" src="./image/commercial-furniture3.jpg" alt="Коммерческая мебель">
+          </div>
+        </article>
+        <article class="goods__item">
+          <div class="goods__image-wrapper">
+            <img class="goods__image" src="./image/commercial-furniture4.jpg" alt="Коммерческая мебель">
+          </div>
+        </article>
       </div>
     </section>
   </main>
+  <!-- Футер -->
   <footer class="footer">
     <div class="footer__info">
       <div class="footer__contacts">
@@ -106,8 +121,15 @@
       </div>
     </div>
   </footer>
+  <div class="popup">
+    <div class="popup__container">
+      <button type="button" aria-label="Закрыть" class="popup__close-button"></button>
+      <img class="popup__image" src="" alt="">
+      <h2 class="popup__title"></h2>
+    </div>
   </div>
   <script src="./src/scripts/burger-menu.js"></script>
+  <script src="./src/scripts/popup-goods.js"></script>
 </body>
 
 </html>
