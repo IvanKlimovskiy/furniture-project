@@ -83,14 +83,14 @@
             Кухни-гостиные
           </h2>
         </a>
-        <div class="furniture__image-wrapper kitchen-living-rooms__image-wrapper_first"><img src="./image/kitchen1.jpg" alt="Стол"
-            class="furniture__image"></div>
-        <div class="furniture__image-wrapper kitchen-living-rooms__image-wrapper_second"><img src="./image/kitchen2.jpg" alt="Стол"
-            class="furniture__image"></div>
-        <div class="furniture__image-wrapper kitchen-living-rooms__image-wrapper_third"><img src="./image/kitchen3.jpg" alt="Стол"
-            class="furniture__image"></div>
-        <div class="furniture__image-wrapper kitchen-living-rooms__image-wrapper_fourth"><img src="./image/kitchen4.jpg" alt="Стол"
-            class="furniture__image"></div>
+        <div class="furniture__image-wrapper kitchen-living-rooms__image-wrapper_first"><img src="./image/kitchen1.jpg"
+            alt="Стол" class="furniture__image"></div>
+        <div class="furniture__image-wrapper kitchen-living-rooms__image-wrapper_second"><img src="./image/kitchen2.jpg"
+            alt="Стол" class="furniture__image"></div>
+        <div class="furniture__image-wrapper kitchen-living-rooms__image-wrapper_third"><img src="./image/kitchen3.jpg"
+            alt="Стол" class="furniture__image"></div>
+        <div class="furniture__image-wrapper kitchen-living-rooms__image-wrapper_fourth"><img src="./image/kitchen4.jpg"
+            alt="Стол" class="furniture__image"></div>
       </article>
       <article class="furniture dressing-rooms">
         <a class="furniture__title-link dressing-rooms__title-link" href="./finished-furniture.html">
@@ -111,6 +111,25 @@
   </main>
   <footer class="footer">
     <div class="footer__info">
+      <div class="form-wrapper">
+        <form class="form" action="post" class="form">
+          <h4 class="form__title">Оставьте заявку и мы Вам перезвоним</h4>
+          <input class="form__input-name" type="text" placeholder="Имя">
+          <input type="number" class="form__input-number" placeholder="Телефон">
+          <button class="form__submit-button">Отправить</button>
+        </form>
+      </div>
+      <div class="footer__payment-info">
+        <h3 class="footer__payment-accept">Мы принимаем</h3>
+        <ul class="footer__payment-systems">
+          <li><img class="footer__payment-system footer__visa-payment-system" src="./image/visa.png" alt="Visa"></li>
+          <li><img class="footer__payment-system footer__maestro-payment-system" src="./image/maestro.png" alt="PayPal">
+          </li>
+          <li><img class="footer__payment-system footer__mir-payment-system" src="./image/mir.png" alt="Мир"></li>
+          <li><img class="footer__payment-system footer__master-card-payment-system" src="./image/master-card.png"
+              alt="Master Card"></li>
+        </ul>
+      </div>
       <div class="footer__contacts">
         <h3 class="footer__contact-us">Свяжитесь с нами</h3>
         <p class="footer__number">+7 (812) 986-02-02</p>
@@ -124,26 +143,6 @@
                 class="footer__icon footer__profi-icon" src="./image/faviconV2.png" alt="Profi.ru"></a></li>
         </ul>
       </div>
-      <div class="footer__payment-info">
-        <h3 class="footer__payment-accept">Мы принимаем</h3>
-        <ul class="footer__payment-systems">
-          <li><img class="footer__payment-system footer__visa-payment-system" src="./image/visa.png" alt="Visa"></li>
-          <li><img class="footer__payment-system footer__maestro-payment-system" src="./image/maestro.png" alt="PayPal">
-          </li>
-          <li><img class="footer__payment-system footer__mir-payment-system"
-              src="./image/mir.png" alt="Мир"></li>
-          <li><img class="footer__payment-system footer__master-card-payment-system" src="./image/master-card.png"
-              alt="Master Card"></li>
-        </ul>
-      </div>
-      <div class="form-wrapper">
-        <form class="form" action="post" class="form">
-          <h4 class="form__title">Оставьте заявку и мы Вам перезвоним</h4>
-          <input class="form__input-name" type="text" placeholder="Имя">
-          <input type="number" class="form__input-number" placeholder="Телефон">
-          <button class="form__submit-button">Отправить</button>
-        </form>
-      </div>
     </div>
   </footer>
   <div class="popup">
@@ -153,9 +152,22 @@
       <h2 class="popup__title"></h2>
     </div>
   </div>
-    <script src="./vendor/slider/itc-slider.min.js"></script>
-    <script src="./src/scripts/burger-menu.js"></script>
-    <script src="./src/scripts/popup.js"></script>
+  <div class="messenger">
+    <div class="messenger__links">
+      <a href="#" class="messenger__link messenger__link_telegram">
+        <img src="image/telegram.svg" alt="Телеграм" class="messenger__icon messenger__icon_telegram">Telegram</a>
+      <a href="#" class="messenger__link messenger__link_vk">
+        <img src="image/vk.svg" alt="Вконтакте" class="messenger__icon messenger__icon_vk">Вконтакте</a>
+      <a href="#" class="messenger__link messenger__link_whatsApp">
+        <img src="image/whatsapp.svg" alt="WhatsApp" class="messenger__icon messenger__icon_whatsApp">WhatsApp</a>
+      <a href="#" class="messenger__link messenger__link_call">
+        <img src="image/call.svg" alt="Телефон" class="messenger__icon messenger__icon_call">Позвонить</a>
+    </div>
+    <button type="button" class="messenger__button"></button>
+  </div>
+  <script src="./vendor/slider/itc-slider.min.js"></script>
+  <script src="./src/scripts/burger-menu.js"></script>
+  <script src="./src/scripts/popup.js"></script>
 </body>
 
 </html>
