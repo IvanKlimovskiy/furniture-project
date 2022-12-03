@@ -827,3 +827,82 @@ template {
   visibility: visible;
   opacity: 1;
 }
+
+.messenger {
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .messenger {
+    right: 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .messenger {
+    right: 20px;
+  }
+}
+.messenger__button {
+  border: 0;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  background-image: url(../../../image/chat-2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.messenger__button:hover {
+  opacity: 0.7;
+}
+.messenger__links {
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background: #fff;
+  top: -450px;
+  right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+.messenger__links_show {
+  opacity: 1;
+  visibility: visible;
+}
+.messenger__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 30px 10px;
+  transition: all 0.2s ease;
+}
+.messenger__link_telegram:hover {
+  background-color: rgba(0, 136, 204, 0.7);
+}
+.messenger__link_vk:hover {
+  background-color: rgba(0, 119, 255, 0.5);
+}
+.messenger__link_whatsApp:hover {
+  background-color: rgba(67, 216, 84, 0.7);
+}
+.messenger__link_call:hover {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+.messenger__icon {
+  width: 30px;
+  height: 30px;
+  margin: 0px 0px 10px 0px;
+}
