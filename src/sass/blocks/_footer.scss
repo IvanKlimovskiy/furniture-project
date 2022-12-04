@@ -32,12 +32,6 @@
     width: 100%;
 
     @media (max-width: 810px) {
-      display: grid;
-      grid-template-columns: minmax(350px, min-content) min-content;
-      grid-template-rows: 1fr 1fr;
-    }
-
-    @media (max-width: 768px) {
       display: flex;
       flex-direction: column;
       gap: 40px;

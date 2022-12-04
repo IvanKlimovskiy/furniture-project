@@ -634,14 +634,6 @@ template {
 }
 @media (max-width: 810px) {
   .footer__info {
-    display: grid;
-    grid-template-columns: minmax(350px, -webkit-min-content) -webkit-min-content;
-    grid-template-columns: minmax(350px, min-content) min-content;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-@media (max-width: 768px) {
-  .footer__info {
     display: flex;
     flex-direction: column;
     gap: 40px;
