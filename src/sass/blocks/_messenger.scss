@@ -1,5 +1,6 @@
 .messenger {
   position: fixed;
+  z-index: 100;
   right: 50px;
   bottom: 20px;
 
@@ -43,6 +44,21 @@
     flex-direction: column;
     align-items: center;
     transition: all .4s ease;
+
+    @media screen and (max-width:425px) {
+      top: -500px;
+      right: 0px;
+    }
+
+    #overlay {
+      background-color: transparent;
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
 
     &_show {
       opacity: 1;

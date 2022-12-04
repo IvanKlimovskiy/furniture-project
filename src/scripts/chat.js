@@ -1,8 +1,15 @@
 const chatButton = document.querySelector('.messenger__button');
 const chatLinks = document.querySelector('.messenger__links');
+const overlay = document.querySelector('#overlay');
 
-function showMessengers() {
-  chatLinks.classList.toggle('messenger__links_show');
-}
+document.addEventListener('click', function (evt) {
+  if (evt.target.id == 'overlay') {
+    chatLinks.classList.remove('messenger__links_show');
+    overlay.style.display = "none";
+  }
 
-chatButton.addEventListener('click', showMessengers);
+  if (evt.target == chatButton) {
+    chatLinks.classList.toggle('messenger__links_show');
+    overlay.style.display = "block";
+  }
+}) 

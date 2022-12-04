@@ -988,7 +988,7 @@ template {
     grid-template-rows: 1fr 1fr;
   }
 }
-@media (max-width: 557px) {
+@media (max-width: 768px) {
   .footer__info {
     display: flex;
     flex-direction: column;
@@ -1146,6 +1146,7 @@ template {
 
 .messenger {
   position: fixed;
+  z-index: 100;
   right: 50px;
   bottom: 20px;
 }
@@ -1189,6 +1190,21 @@ template {
   flex-direction: column;
   align-items: center;
   transition: all 0.4s ease;
+}
+@media screen and (max-width: 425px) {
+  .messenger__links {
+    top: -500px;
+    right: 0px;
+  }
+}
+.messenger__links #overlay {
+  background-color: transparent;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .messenger__links_show {
   opacity: 1;
