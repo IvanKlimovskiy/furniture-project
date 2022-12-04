@@ -1,0 +1,102 @@
+.messenger {
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+
+  @media screen and (max-width:768px) {
+    right: 30px;
+  }
+
+  @media screen and (max-width:425px) {
+    right: 20px;
+  }
+
+  &__button {
+    border: 0;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    background-image: url(../../../image/chat-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: all .4s ease;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__links {
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background: #fff;
+    top: -450px;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .4s ease;
+
+    &_show {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    list-style: none;
+    padding: 30px 10px;
+    transition: all .2s ease;
+
+    &_telegram {
+      &:hover {
+        background-color: rgb(0, 136, 204, .7);
+      }
+    }
+
+    &_vk {
+      &:hover {
+        background-color: rgba(0, 119, 255, .5);
+      }
+    }
+
+    &_whatsApp {
+      &:hover {
+        background-color: rgba(67, 216, 84, .7);
+      }
+    }
+
+    &_call {
+      &:hover {
+        background-color: rgba(0, 255, 0, .5);
+      }
+    }
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px 10px 0px;
+
+    &_telegram {}
+
+    &_vk {}
+
+    &_whatsApp {}
+
+    &_call {}
+  }
+}
