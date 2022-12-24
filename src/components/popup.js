@@ -1,5 +1,5 @@
 const popup = document.querySelector('.popup');
-const imagesLink = document.querySelectorAll('.furniture__image-wrapper');
+const imagesLink = Array.from(document.querySelectorAll('.furniture__image-wrapper'));
 const buttonClosePopup = document.querySelector('.popup__close-button');
 const popupOpenedImage = document.querySelector('.popup__image')
 
@@ -15,7 +15,7 @@ buttonClosePopup.addEventListener("click", () => {
   closePopup(popup);
 });
 
-Array.from(imagesLink).forEach((el) => {
+imagesLink.forEach((el) => {
   el.addEventListener('click', function(evt) {
     popupOpenedImage.src = evt.target.src;
     openPopup(popup);
