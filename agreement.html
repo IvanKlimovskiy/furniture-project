@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/agreement.css">
+  <title>Формула Дизайна</title>
+</head>
+
+<body class="root">
+<!-- Хедер -->
+<header class="header">
+  <div class="header__wrapper">
+    <a class="header__logo-link" href="./index.html"><img class="header__logo" src="./images/logo.png"
+                                                          alt="Логотип"></a>
+    <!-- Навигационное меню -->
+    <nav class="nav-menu">
+      <button type="button" class="header__close-menu-button">
+      </button>
+      <ul class="nav-menu__list">
+        <li><a class="nav-menu__item" href="./cabinets.html">Шкафы</a></li>
+        <li><a class="nav-menu__item" href="./kitchen-living-rooms.html">Кухни-гостиные</a></li>
+        <li><a class="nav-menu__item" href="./dressing-rooms.html">Гардеробные</a></li>
+        <li><a class="nav-menu__item" href="./how-to-order.html">Как заказать</a></li>
+        <li><a class="nav-menu__item" href="./contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <!-- Бургер меню -->
+    <div class="header__burger-menu">
+      <span class="header__burger-line"></span>
+    </div>
+  </div>
+</header>
+
+<main class="content">
+  <div class="agreement">
+    <h1 class="agreement__title">Соглашение на обработку персональных данных</h1>
+    <p class="agreement__subtitle">Предоставляя свои персональные данные Покупатель даёт согласие на обработку,
+      хранение и
+      использование своих персональных данных на основании ФЗ № 152-ФЗ «О персональных данных» от 27.07.2006
+      г. в
+      следующих целях:</p>
+    <ul class="agreement__list">
+      <li>Регистрации Пользователя на сайте</li>
+      <li>Осуществление клиентской поддержки</li>
+      <li>Получения Пользователем информации о маркетинговых событиях</li>
+      <li>Выполнение Продавцом обязательств перед Покупателем</li>
+      <li>Проведения аудита и прочих внутренних исследований с целью повышения качества предоставляемых услуг.
+      </li>
+    </ul>
+    <p>Под персональными данными подразумевается любая информация личного характера, позволяющая установить
+      личность
+      Покупателя такая как:</p>
+    <ul>
+      <li>Фамилия, Имя, Отчество</li>
+      <li>Дата рождения</li>
+      <li>Контактный телефон</li>
+      <li>Адрес электронной почты</li>
+      <li>Почтовый адрес</li>
+    </ul>
+    <p>Персональные данные Покупателей хранятся исключительно на электронных носителях и обрабатываются с
+      использованием автоматизированных систем, за исключением случаев, когда неавтоматизированная обработка
+      персональных данных необходима в связи с исполнением требований законодательства.</p>
+    <p>Продавец обязуется не передавать полученные персональные данные третьим лицам, за исключением следующих
+      случаев:</p>
+    <ul>
+      <li>По запросам уполномоченных органов государственной власти РФ только по основаниям и в порядке,
+        установленным законодательством РФ
+      </li>
+      <li>Стратегическим партнерам, которые работают с Продавцом для предоставления продуктов и услуг, или тем
+        из
+        них, которые помогают Продавцу реализовывать продукты и услуги потребителям. Мы предоставляем
+        третьим
+        лицам минимальный объем персональных данных, необходимый только для оказания требуемой услуги или
+        проведения необходимой транзакции.
+      </li>
+    </ul>
+    <p>Продавец оставляет за собой право вносить изменения в одностороннем порядке в настоящие правила, при
+      условии,
+      что изменения не противоречат действующему законодательству РФ. Изменения условий настоящих правил
+      вступают
+      в силу после их публикации на Сайте.</p>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__info">
+    <div class="form-wrapper">
+      <form class="form" action="post" class="form">
+        <h4 class="form__title">Оставьте заявку и мы Вам перезвоним</h4>
+        <input id="name" required class="form__input form__input-name" type="text" placeholder="Имя"
+               pattern="^[А-Яа-яЁё\s]+$" minlength="2"
+               maxlength="35">
+        <span class="name-error form__input-error"></span>
+        <input id="number" name="number" required type="text" class="form__input form__input-number "
+               placeholder="Телефон" pattern="\+[0-9]{11}">
+        <span class="number-error form__input-error"></span>
+        <div class="form__agreement">
+          <input required class="form__agreement-checkbox" type="checkbox" name="agreement" id="formAgreement"
+                 checked>
+          <label class="form__agreement-label" for="formAgreement"><span>Я согласен на <a class="form__agreement-link"
+                                                                                          href="./agreement.html">обработку персональных данных.</a></span></label>
+        </div>
+        <button class="form__submit-button form__submit-button_disabled" disabled>Отправить</button>
+      </form>
+    </div>
+    <div class="footer__payment-info">
+      <h3 class="footer__payment-accept">Мы принимаем</h3>
+      <ul class="footer__payment-systems">
+        <li><img class="footer__payment-system footer__visa-payment-system" src="./images/visa.png"
+                 alt="Visa"></li>
+        <li><img class="footer__payment-system footer__maestro-payment-system" src="./images/maestro.png"
+                 alt="PayPal">
+        </li>
+        <li><img class="footer__payment-system footer__mir-payment-system" src="./images/mir.png" alt="Мир">
+        </li>
+        <li><img class="footer__payment-system footer__master-card-payment-system"
+                 src="./images/master-card.png" alt="Master Card"></li>
+      </ul>
+    </div>
+    <div class="footer__contacts">
+      <h3 class="footer__contact-us">Свяжитесь с нами</h3>
+      <p class="footer__number">+7 (812) 986-02-02</p>
+      <p class="footer__email">fordiz.meb@yandex.ru</p>
+      <ul class="footer__social-links">
+        <li><a target="_blank" href="https://vk.com/tuning_vashego_doma"
+               class="footer__social-link footer__vk"><img class="footer__icon footer__vk-icon"
+                                                           src="./images/vk.png" alt="Вконтакте"></a></li>
+        <li><a target="_blank" href="https://instagram.com"
+               class="footer__social-link footer__instagram"><img
+          class="footer__icon footer__instagram-icon" src="./images/instagram.png"
+          alt="Instagram"></a></li>
+        <li><a target="_blank" href="https://profi.ru" class="footer__social-link footer__profi"><img
+          class="footer__icon footer__profi-icon" src="./images/faviconV2.png" alt="Profi.ru"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<div class="messenger">
+  <div class="messenger__links">
+    <div id="overlay"></div>
+    <a href="#" target="_blank" class="messenger__link messenger__link_telegram">
+      <img src="images/telegram.svg" alt="Телеграм"
+           class="messenger__icon messenger__icon_telegram">Telegram</a>
+    <a href="#" target="_blank" class="messenger__link messenger__link_vk">
+      <img src="images/vk.svg" alt="Вконтакте" class="messenger__icon messenger__icon_vk">Вконтакте</a>
+    <a href="#" target="_blank" class="messenger__link messenger__link_whatsApp">
+      <img src="images/whatsapp.svg" alt="WhatsApp"
+           class="messenger__icon messenger__icon_whatsApp">WhatsApp</a>
+    <a href="tel:+79001111111" class="messenger__link messenger__link_call">
+      <img src="images/call.svg" alt="Телефон" class="messenger__icon messenger__icon_call">Позвонить</a>
+  </div>
+  <button type="button" class="messenger__button"></button>
+</div>
+<script src="./src/scripts/burger-menu.js"></script>
+<script src="src/scripts/chat.js"></script>
+<script src="./src/scripts/validate.js"></script>
+</body>
+
+</html>
