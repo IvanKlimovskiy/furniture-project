@@ -10,118 +10,131 @@
 </head>
 
 <body class="root">
-  <!-- Хедер -->
-  <header class="header">
-    <div class="header__wrapper">
-      <a class="header__logo-link" href="./index.html"><img class="header__logo" src="./images/logo.png"
-          alt="Логотип"></a>
-      <!-- Навигационное меню -->
-      <nav class="nav-menu">
-        <button type="button" class="header__close-menu-button">
-        </button>
-        <ul class="nav-menu__list">
-          <li><a class="nav-menu__item" href="./cabinets.html">Шкафы</a></li>
-          <li><a class="nav-menu__item" href="./kitchen-living-rooms.html">Кухни-гостиные</a></li>
-          <li><a class="nav-menu__item" href="./dressing-rooms.html">Гардеробные</a></li>
-          <li><a class="nav-menu__item" href="./how-to-order.html">Как заказать</a></li>
-          <li><a class="nav-menu__item" href="./contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
-      <!-- Бургер меню -->
-      <div class="header__burger-menu">
-        <span class="header__burger-line"></span>
-      </div>
+<!-- Хедер -->
+<header class="header">
+  <div class="header__wrapper">
+    <a class="header__logo-link" href="./index.html"><img class="header__logo" src="./images/logo.png"
+                                                          alt="Логотип"></a>
+    <!-- Навигационное меню -->
+    <nav class="nav-menu">
+      <button type="button" class="header__close-menu-button">
+      </button>
+      <ul class="nav-menu__list">
+        <li><a class="nav-menu__item" href="./cabinets.html">Шкафы</a></li>
+        <li><a class="nav-menu__item" href="./kitchen-living-rooms.html">Кухни-гостиные</a></li>
+        <li><a class="nav-menu__item" href="./dressing-rooms.html">Гардеробные</a></li>
+        <li><a class="nav-menu__item" href="./how-to-order.html">Как заказать</a></li>
+        <li><a class="nav-menu__item" href="./contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <!-- Бургер меню -->
+    <div class="header__burger-menu">
+      <span class="header__burger-line"></span>
     </div>
-  </header>
-
-  <main class="content">
-    <section class="contacts">
-      <h1 class="contacts__title">Контакты</h1>
-      <div class="contacts__wrapper">
-        <div class="contacts__info">
-          <h2 class="contacts__info-title">
-            +7 (812) 986-02-02
-          </h2>
-          <p class="contacts__info-text">
-            Мы располагаемся по адресу: Санкт-Петербург, Выборгское шоссе 369/6, ТЦ Паргос.
-          </p>
-          <p class="contacts__hours">
-          <ul class="contacts__days">
-            <li class="contacts__day">Понедельник: 10:00 - 20:00
-            </li>
-            <li class="contacts__day">Вторник: 10:00 - 20:00
-            </li>
-            <li class="contacts__day">Среда: 10:00 - 20:00
-            </li>
-            <li class="contacts__day">Четверг: 10:00 - 20:00
-            </li>
-            <li class="contacts__day">Пятница: 10:00 - 20:00
-            </li>
-            <li class="contacts__day">Суббота: 10:00 - 17:00
-            </li>
-            <li class="contacts__day">Воскресенье: 10:00 - 17:00
-            </li>
-          </ul>
-          </p>
-        </div>
-        <iframe class="yandex-map"
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae85f37d0f51706c1c37657f1be5f3b676b68c0f796bd13d4dc538e1815806232&amp;source=constructor">
-        </iframe>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__info">
-      <div class="footer__contacts">
-        <h3 class="footer__contact-us">Свяжитесь с нами</h3>
-        <p class="footer__number">+7 (812) 986-02-02</p>
-        <p class="footer__email">fordiz.meb@yandex.ru</p>
-        <ul class="footer__social-links">
-          <li><a target="_blank" href="https://vk.com/tuning_vashego_doma" class="footer__social-link footer__vk"><img
-                class="footer__icon footer__vk-icon" src="./images/vk.png" alt="Вконтакте"></a></li>
-          <li><a target="_blank" href="https://instagram.com" class="footer__social-link footer__instagram"><img
-                class="footer__icon footer__instagram-icon" src="./images/instagram.png" alt="Instagram"></a></li>
-          <li><a target="_blank" href="https://profi.ru" class="footer__social-link footer__profi"><img
-                class="footer__icon footer__profi-icon" src="./images/faviconV2.png" alt="Profi.ru"></a></li>
-        </ul>
-      </div>
-      <div class="footer__payment-info">
-        <h3 class="footer__payment-accept">Мы принимаем</h3>
-        <ul class="footer__payment-systems">
-          <li><img class="footer__payment-system footer__visa-payment-system" src="./images/visa.png" alt="Visa"></li>
-          <li><img class="footer__payment-system footer__maestro-payment-system" src="./images/maestro.png" alt="PayPal">
-          </li>
-          <li><img class="footer__payment-system footer__mir-payment-system" src="./images/mir.png" alt="Мир"></li>
-          <li><img class="footer__payment-system footer__master-card-payment-system" src="./images/master-card.png"
-              alt="Master Card"></li>
-        </ul>
-      </div>
-      <div class="form-wrapper">
-        <form class="form" action="post" class="form">
-          <h4 class="form__title">Оставьте заявку и мы Вам перезвоним</h4>
-          <input class="form__input-name" type="text" placeholder="Имя">
-          <input type="number" class="form__input-number" placeholder="Телефон">
-          <button class="form__submit-button">Отправить</button>
-        </form>
-      </div>
-    </div>
-  </footer>
-  <div class="messenger">
-    <div class="messenger__links">
-      <div id="overlay"></div>
-      <a href="#" target="_blank" class="messenger__link messenger__link_telegram">
-        <img src="images/telegram.svg" alt="Телеграм" class="messenger__icon messenger__icon_telegram">Telegram</a>
-      <a href="#" target="_blank" class="messenger__link messenger__link_vk">
-        <img src="images/vk.svg" alt="Вконтакте" class="messenger__icon messenger__icon_vk">Вконтакте</a>
-      <a href="#" target="_blank" class="messenger__link messenger__link_whatsApp">
-        <img src="images/whatsapp.svg" alt="WhatsApp" class="messenger__icon messenger__icon_whatsApp">WhatsApp</a>
-      <a href="tel:+79001111111" class="messenger__link messenger__link_call">
-        <img src="images/call.svg" alt="Телефон" class="messenger__icon messenger__icon_call">Позвонить</a>
-    </div>
-    <button type="button" class="messenger__button"></button>
   </div>
-  <script src="./src/scripts/burger-menu.js"></script>
-  <script src="src/scripts/chat.js"></script>
+</header>
+
+<main class="content">
+  <section class="contacts">
+    <h1 class="contacts__title">Контакты</h1>
+    <div class="contacts__wrapper">
+      <div class="contacts__info">
+        <h2 class="contacts__info-title">
+          +7 (812) 986-02-02
+        </h2>
+        <p class="contacts__info-text">
+          Мы располагаемся по адресу: Санкт-Петербург, Выборгское шоссе 369/6, ТЦ Паргос.
+        </p>
+        <p class="contacts__hours">
+        <ul class="contacts__days">
+          <li class="contacts__day">Понедельник: 10:00 - 20:00
+          </li>
+          <li class="contacts__day">Вторник: 10:00 - 20:00
+          </li>
+          <li class="contacts__day">Среда: 10:00 - 20:00
+          </li>
+          <li class="contacts__day">Четверг: 10:00 - 20:00
+          </li>
+          <li class="contacts__day">Пятница: 10:00 - 20:00
+          </li>
+          <li class="contacts__day">Суббота: 10:00 - 17:00
+          </li>
+          <li class="contacts__day">Воскресенье: 10:00 - 17:00
+          </li>
+        </ul>
+        </p>
+      </div>
+      <iframe class="yandex-map"
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae85f37d0f51706c1c37657f1be5f3b676b68c0f796bd13d4dc538e1815806232&amp;source=constructor">
+      </iframe>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__info">
+    <div class="form-wrapper">
+      <form class="form" action="post" class="form">
+        <h4 class="form__title">Оставьте заявку и мы Вам перезвоним</h4>
+        <input id="name" required class="form__input form__input-name" type="text" placeholder="Имя"
+               pattern="^[А-Яа-яЁё\s]+$" minlength="2"
+               maxlength="35">
+        <span class="name-error form__input-error"></span>
+        <input id="number" name="number" required type="text" class="form__input form__input-number "
+               placeholder="Телефон" pattern="\+[0-9]{11}">
+        <span class="number-error form__input-error"></span>
+        <div class="form__agreement">
+          <input required class="form__agreement-checkbox" type="checkbox" name="agreement" id="formAgreement"
+                 checked>
+          <label class="form__agreement-label" for="formAgreement"><span>Я согласен на <a class="form__agreement-link"
+                                                                                          href="./agreement.html">обработку персональных данных.</a></span></label>
+        </div>
+        <button class="form__submit-button form__submit-button_disabled" disabled>Отправить</button>
+      </form>
+    </div>
+    <div class="footer__payment-info">
+      <h3 class="footer__payment-accept">Мы принимаем</h3>
+      <ul class="footer__payment-systems">
+        <li><img class="footer__payment-system footer__visa-payment-system" src="./images/visa.png" alt="Visa"></li>
+        <li><img class="footer__payment-system footer__maestro-payment-system" src="./images/maestro.png"
+                 alt="PayPal">
+        </li>
+        <li><img class="footer__payment-system footer__mir-payment-system" src="./images/mir.png" alt="Мир"></li>
+        <li><img class="footer__payment-system footer__master-card-payment-system" src="./images/master-card.png"
+                 alt="Master Card"></li>
+      </ul>
+    </div>
+    <div class="footer__contacts">
+      <h3 class="footer__contact-us">Свяжитесь с нами</h3>
+      <p class="footer__number">+7 (812) 986-02-02</p>
+      <p class="footer__email">fordiz.meb@yandex.ru</p>
+      <ul class="footer__social-links">
+        <li><a target="_blank" href="https://vk.com/tuning_vashego_doma" class="footer__social-link footer__vk"><img
+          class="footer__icon footer__vk-icon" src="./images/vk.png" alt="Вконтакте"></a></li>
+        <li><a target="_blank" href="https://instagram.com" class="footer__social-link footer__instagram"><img
+          class="footer__icon footer__instagram-icon" src="./images/instagram.png" alt="Instagram"></a></li>
+        <li><a target="_blank" href="https://profi.ru" class="footer__social-link footer__profi"><img
+          class="footer__icon footer__profi-icon" src="./images/faviconV2.png" alt="Profi.ru"></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<div class="messenger">
+  <div class="messenger__links">
+    <div id="overlay"></div>
+    <a href="#" target="_blank" class="messenger__link messenger__link_telegram">
+      <img src="images/telegram.svg" alt="Телеграм" class="messenger__icon messenger__icon_telegram">Telegram</a>
+    <a href="#" target="_blank" class="messenger__link messenger__link_vk">
+      <img src="images/vk.svg" alt="Вконтакте" class="messenger__icon messenger__icon_vk">Вконтакте</a>
+    <a href="#" target="_blank" class="messenger__link messenger__link_whatsApp">
+      <img src="images/whatsapp.svg" alt="WhatsApp" class="messenger__icon messenger__icon_whatsApp">WhatsApp</a>
+    <a href="tel:+79001111111" class="messenger__link messenger__link_call">
+      <img src="images/call.svg" alt="Телефон" class="messenger__icon messenger__icon_call">Позвонить</a>
+  </div>
+  <button type="button" class="messenger__button"></button>
+</div>
+<script src="./src/scripts/burger-menu.js"></script>
+<script src="src/scripts/chat.js"></script>
+<script src="./src/scripts/validate.js"></script>
 </body>
 
 </html>

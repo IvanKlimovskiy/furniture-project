@@ -85,12 +85,12 @@
         </a>
         <div class="furniture__image-wrapper kitchen-living-rooms__image-wrapper_first"><img src="./images/kitchen1.jpg"
             alt="Стол" class="furniture__image"></div>
-        <div class="furniture__image-wrapper kitchen-living-rooms__image-wrapper_second"><img src="./images/kitchen2.jpg"
-            alt="Стол" class="furniture__image"></div>
+        <div class="furniture__image-wrapper kitchen-living-rooms__image-wrapper_second"><img
+            src="./images/kitchen2.jpg" alt="Стол" class="furniture__image"></div>
         <div class="furniture__image-wrapper kitchen-living-rooms__image-wrapper_third"><img src="./images/kitchen3.jpg"
             alt="Стол" class="furniture__image"></div>
-        <div class="furniture__image-wrapper kitchen-living-rooms__image-wrapper_fourth"><img src="./images/kitchen4.jpg"
-            alt="Стол" class="furniture__image"></div>
+        <div class="furniture__image-wrapper kitchen-living-rooms__image-wrapper_fourth"><img
+            src="./images/kitchen4.jpg" alt="Стол" class="furniture__image"></div>
       </article>
       <article class="furniture dressing-rooms">
         <a class="furniture__title-link dressing-rooms__title-link" href="./finished-furniture.html">
@@ -114,16 +114,26 @@
       <div class="form-wrapper">
         <form class="form" action="post" class="form">
           <h4 class="form__title">Оставьте заявку и мы Вам перезвоним</h4>
-          <input class="form__input-name" type="text" placeholder="Имя">
-          <input type="number" class="form__input-number" placeholder="Телефон">
-          <button class="form__submit-button">Отправить</button>
+          <input id="name" required class="form__input form__input-name" type="text" placeholder="Имя" pattern="^[А-Яа-яЁё\s]+$" minlength="2"
+            maxlength="35">
+          <span class="name-error form__input-error"></span>
+          <input id="number" name="number" required type="text" class="form__input form__input-number " placeholder="Телефон" pattern="\+[0-9]{11}">
+          <span class="number-error form__input-error"></span>
+          <div class="form__agreement">
+          <input required class="form__agreement-checkbox" type="checkbox" name="agreement" id="formAgreement"
+              checked>
+            <label class="form__agreement-label" for="formAgreement"><span>Я согласен на <a class="form__agreement-link"
+                  href="./agreement.html">обработку персональных данных.</a></span></label>
+          </div>
+          <button class="form__submit-button form__submit-button_disabled" disabled>Отправить</button>
         </form>
       </div>
       <div class="footer__payment-info">
         <h3 class="footer__payment-accept">Мы принимаем</h3>
         <ul class="footer__payment-systems">
           <li><img class="footer__payment-system footer__visa-payment-system" src="./images/visa.png" alt="Visa"></li>
-          <li><img class="footer__payment-system footer__maestro-payment-system" src="./images/maestro.png" alt="PayPal">
+          <li><img class="footer__payment-system footer__maestro-payment-system" src="./images/maestro.png"
+              alt="PayPal">
           </li>
           <li><img class="footer__payment-system footer__mir-payment-system" src="./images/mir.png" alt="Мир"></li>
           <li><img class="footer__payment-system footer__master-card-payment-system" src="./images/master-card.png"
@@ -169,7 +179,8 @@
   <script src="./vendor/slider/itc-slider.min.js"></script>
   <script src="./src/scripts/burger-menu.js"></script>
   <script src="./src/scripts/popup.js"></script>
-  <script src="src/scripts/chat.js"></script>
+  <script src="./src/scripts/chat.js"></script>
+  <script src="./src/scripts/validate.js"></script>
 </body>
 
 </html>

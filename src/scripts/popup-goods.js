@@ -1,7 +1,7 @@
-const popup = document.querySelector('.popup');
-const goods = document.querySelectorAll('.goods__image-wrapper');
-const buttonClosePopup = document.querySelector('.popup__close-button');
-const popupOpenedImage = document.querySelector('.popup__image')
+const popup = document.querySelector(".popup");
+const goods = Array.from(document.querySelectorAll(".goods__image-wrapper"));
+const buttonClosePopup = document.querySelector(".popup__close-button");
+const popupOpenedImage = document.querySelector(".popup__image");
 
 function openPopup(popup) {
   popup.classList.add("popup_opened");
@@ -15,9 +15,9 @@ buttonClosePopup.addEventListener("click", () => {
   closePopup(popup);
 });
 
-Array.from(goods).forEach((el) => {
-  el.addEventListener('click', function(evt) {
+goods.forEach((el) => {
+  el.addEventListener("click", function (evt) {
     popupOpenedImage.src = evt.target.src;
     openPopup(popup);
-  })
-})
+  });
+});

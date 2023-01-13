@@ -3,21 +3,21 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../../../vendor/fonts/Inter-Regular.woff2) format("woff2"), url(../../../vendor/fonts/Inter-Regular.woff) format("woff");
+  src: url(../vendor/fonts/Inter-Regular.woff2) format("woff2"), url(../vendor/fonts/Inter-Regular.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(../../../vendor/fonts/Inter-Bold.woff2) format("woff2"), url(../../../vendor/fonts/Inter-Bold.woff) format("woff");
+  src: url(../vendor/fonts/Inter-Bold.woff2) format("woff2"), url(../vendor/fonts/Inter-Bold.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url(../../../vendor/fonts/Inter-Black.woff2) format("woff2"), url(../../../vendor/fonts/Inter-Black.woff) format("woff");
+  src: url(../vendor/fonts/Inter-Black.woff2) format("woff2"), url(../vendor/fonts/Inter-Black.woff) format("woff");
 }
 .itc-slider {
   position: relative;
@@ -520,7 +520,7 @@ template {
   border: none;
   width: 7vw;
   height: 7vw;
-  background-image: url("../../../image/close-button.svg");
+  background-image: url("../images/close-button.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0);
@@ -1059,10 +1059,29 @@ template {
   background-color: #D6D6D6;
   color: black;
 }
+.form__submit-button_disabled {
+  background-color: #D6D6D6;
+  color: #b0b0b0;
+}
+.form__submit-button_disabled:hover {
+  color: #b0b0b0;
+}
 .form__title {
   font-size: 20px;
   margin: 0 0 20px;
   color: #D6D6D6;
+}
+.form__agreement {
+  margin-bottom: 8px;
+}
+.form__agreement-link {
+  text-decoration: none;
+}
+.form__input_type_error {
+  border: 1px solid red;
+}
+.form__input:focus {
+  outline: none;
 }
 
 .popup {
@@ -1083,7 +1102,7 @@ template {
   height: 32px;
   top: -40px;
   right: -40px;
-  background-image: url("../../../images/close-button.svg");
+  background-image: url("../images/close-button.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0);
@@ -1147,7 +1166,7 @@ template {
   background-color: transparent;
   width: 50px;
   height: 50px;
-  background-image: url(../../../images/chat-2.svg);
+  background-image: url(../images/chat-2.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;

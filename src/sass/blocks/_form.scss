@@ -35,11 +35,35 @@
       background-color: #D6D6D6;
       color: black;
     }
+
+    &_disabled {
+      background-color: #D6D6D6;
+      color: #b0b0b0;
+      &:hover {
+        color: #b0b0b0;
+      }
+    }
   }
 
   &__title {
     font-size: 20px;
     margin: 0 0 20px;
     color: #D6D6D6;
+  }
+
+  &__agreement {
+    margin-bottom: 8px;
+  }
+
+  &__agreement-link {
+    text-decoration: none;
+  }
+
+  &__input_type_error {
+      border: 1px solid red;
+  }
+
+  &__input:focus {
+    outline: none;
   }
 }
