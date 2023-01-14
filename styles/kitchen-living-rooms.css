@@ -898,6 +898,11 @@ template {
   max-width: 75vw;
   max-height: 75vh;
 }
+.popup__image-container {
+  background: #262525;
+  max-width: 75vw;
+  max-height: 75vh;
+}
 .popup__image {
   display: block;
   width: 100%;

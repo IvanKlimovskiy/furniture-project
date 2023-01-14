@@ -904,6 +904,11 @@ template {
   height: 100%;
   object-fit: contain;
 }
+.popup__image-container {
+  background: #262525;
+  max-width: 75vw;
+  max-height: 75vh;
+}
 .popup_image {
   background-color: rgba(0, 0, 0, 0.9);
 }

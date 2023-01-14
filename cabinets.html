@@ -136,8 +136,28 @@
 <div class="popup">
   <div class="popup__container">
     <button type="button" aria-label="Закрыть" class="popup__close-button"></button>
-    <img class="popup__image" src="" alt="">
-    <h2 class="popup__title"></h2>
+    <div class="itc-slider" data-slider="itc-slider" data-autoplay="false" data-interval="4000">
+      <div class="itc-slider__wrapper">
+        <div class="itc-slider__items">
+          <div class="itc-slider__item popup__image-container">
+            <img src="./images/kitchen4.jpg" alt="Кухня" class="popup__image">
+          </div>
+          <div class="itc-slider__item popup__image-container">
+            <img src="./images/finished-furniture2.jpg" alt="Кухня" class="popup__image">
+          </div>
+          <div class="itc-slider__item popup__image-container">
+            <img src="./images/commercial-furniture2.jpg" alt="Кухня" class="popup__image">
+          </div>
+        </div>
+      </div>
+      <ol class="itc-slider__indicators">
+        <li class="itc-slider__indicator" data-slide-to="0"></li>
+        <li class="itc-slider__indicator" data-slide-to="1"></li>
+        <li class="itc-slider__indicator" data-slide-to="2"></li>
+      </ol>
+      <button class="itc-slider__btn itc-slider__btn_prev"></button>
+      <button class="itc-slider__btn itc-slider__btn_next"></button>
+    </div>
   </div>
 </div>
 <div class="messenger">
@@ -154,6 +174,7 @@
   </div>
   <button type="button" class="messenger__button"></button>
 </div>
+<script src="./vendor/slider/itc-slider.min.js"></script>
 <script src="./src/scripts/burger-menu.js"></script>
 <script src="./src/scripts/popup-goods.js"></script>
 <script src="src/scripts/chat.js"></script>
