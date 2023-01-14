@@ -202,7 +202,6 @@ a {
  */
 abbr[title] {
   border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
 }
 
@@ -491,7 +490,7 @@ template {
     width: 60px;
     height: 50px;
     z-index: 10;
-    margin: 30px 0 0 0px;
+    margin: 30px 0 0;
     padding: 0;
     align-self: start;
   }
@@ -887,14 +886,13 @@ template {
     width: 20px;
     height: 20px;
     top: -36px;
-    right: 0px;
+    right: 0;
   }
 }
 .popup__container {
   margin: 0 40px 0;
   box-sizing: border-box;
   position: relative;
-  height: 100%;
   max-width: 75vw;
   max-height: 75vh;
 }
@@ -968,7 +966,7 @@ template {
 @media screen and (max-width: 425px) {
   .messenger__links {
     top: -500px;
-    right: 0px;
+    right: 0;
   }
 }
 .messenger__links #overlay {
@@ -1010,5 +1008,5 @@ template {
 .messenger__icon {
   width: 30px;
   height: 30px;
-  margin: 0px 0px 10px 0px;
+  margin: 0 0 10px;
 }

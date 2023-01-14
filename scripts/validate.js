@@ -13,11 +13,7 @@ const deactivateSubmitButton = () => {
 }
 
 agreementCheckbox.addEventListener("change", () => {
-  if (agreementCheckbox.checked) {
-    activateSubmitButton()
-  } else {
-    deactivateSubmitButton()
-  }
+  toggleButtonState(hasInvalidInputs(inputElements))
 })
 
 const toggleButtonState = (hasInvalidInputs) => {
