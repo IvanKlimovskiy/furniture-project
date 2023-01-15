@@ -453,7 +453,7 @@ template {
 }
 
 .header {
-  z-index: 5;
+  z-index: 4;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -678,7 +678,7 @@ template {
   display: grid;
   column-gap: 10px;
   row-gap: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 .goods__image {
   transform: scale3d(1, 1, 1);
@@ -861,7 +861,7 @@ template {
   background-color: rgba(0, 0, 0, 0.5);
   visibility: hidden;
   opacity: 0;
-  transition: 0.5s;
+  transition: .8s;
 }
 .popup__close-button {
   position: absolute;
@@ -896,26 +896,27 @@ template {
   max-width: 75vw;
   max-height: 75vh;
 }
-.popup__image-container {
-  background: #262525;
-  max-width: 75vw;
-  max-height: 75vh;
-}
 .popup__image {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+.popup__image-container {
+  background: #262525;
+  max-width: 75vw;
+  max-height: 75vh;
+}
 .popup_image {
   background-color: rgba(0, 0, 0, 0.9);
 }
 .popup_opened {
-  z-index: 5;
   visibility: visible;
   opacity: 1;
 }
-
+.popup_opened_style_z-index {
+  z-index: 5;
+}
 .messenger {
   position: fixed;
   z-index: 100;

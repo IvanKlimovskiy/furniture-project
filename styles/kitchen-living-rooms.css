@@ -451,9 +451,11 @@ template {
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
-
+.root_scroll_disabled {
+  overflow: hidden;
+}
 .header {
-  z-index: 5;
+  z-index: 4;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -678,7 +680,7 @@ template {
   display: grid;
   column-gap: 10px;
   row-gap: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 .goods__image {
   transform: scale3d(1, 1, 1);
@@ -852,7 +854,7 @@ template {
 }
 
 .popup {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -861,7 +863,7 @@ template {
   background-color: rgba(0, 0, 0, 0.5);
   visibility: hidden;
   opacity: 0;
-  transition: 0.5s;
+  transition: .8s;
 }
 .popup__close-button {
   position: absolute;
@@ -896,27 +898,58 @@ template {
   max-width: 75vw;
   max-height: 75vh;
 }
-.popup__image-container {
-  background: #262525;
-  max-width: 75vw;
-  max-height: 75vh;
-}
 .popup__image {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+.popup__image-container {
+  background: #262525;
+  max-width: 75vw;
+  max-height: 75vh;
+}
 .popup_image {
   background-color: rgba(0, 0, 0, 0.9);
 }
 .popup_opened {
-  display: flex;
-  z-index: 5;
   visibility: visible;
   opacity: 1;
 }
-
+.popup_opened_style_z-index {
+  z-index: 5;
+}
+.send-form-popup {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  background: #577175;
+  width: 450px;
+  height: 250px;
+}
+.send-form-popup__title {
+  text-align: center;
+  font-size: 42px;
+  margin: 0;
+  color: #D6D6D6;
+}
+.send-form-popup__button {
+  align-self: center;
+  background-color: #405357;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.send-form-popup__button:hover {
+  background-color: #D6D6D6;
+  color: black;
+}
 .messenger {
   position: fixed;
   z-index: 100;

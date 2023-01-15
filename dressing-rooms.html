@@ -86,15 +86,15 @@
 <footer class="footer">
   <div class="footer__info">
     <div class="form-wrapper">
-      <form class="form" action="post" class="form">
+      <form class="form" method="post">
         <h4 class="form__title">Оставьте заявку и мы Вам перезвоним</h4>
-        <input id="name" required class="form__input form__input-name" type="text" placeholder="Имя"
+        <label for="name"></label>
+        <input id="name" name="name" required class="form__input form__input-name" type="text" placeholder="Имя"
                pattern="^[А-Яа-яЁё\s]+$" minlength="2"
                maxlength="35">
-        <span class="name-error form__input-error"></span>
+        <label for="number"></label>
         <input id="number" name="number" required type="text" class="form__input form__input-number "
                placeholder="Телефон" pattern="\+[0-9]{11}">
-        <span class="number-error form__input-error"></span>
         <div class="form__agreement">
           <input required class="form__agreement-checkbox" type="checkbox" name="agreement" id="formAgreement"
                  checked>
@@ -131,6 +131,14 @@
     </div>
   </div>
 </footer>
+<div class="popup popup_type_confirmation">
+  <div class="popup__container">
+    <div class="send-form-popup">
+      <h1 class="send-form-popup__title"></h1>
+      <button type="button" class="send-form-popup__button">ОК!</button>
+    </div>
+  </div>
+</div>
 <div class="popup">
   <div class="popup__container">
     <button type="button" aria-label="Закрыть" class="popup__close-button"></button>
@@ -161,22 +169,20 @@
 <div class="messenger">
   <div class="messenger__links">
     <div id="overlay"></div>
-    <a href="#" target="_blank" class="messenger__link messenger__link_telegram">
+    <a href="https://t.me/+78129860202" target="_blank" class="messenger__link messenger__link_telegram">
       <img src="images/telegram.svg" alt="Телеграм" class="messenger__icon messenger__icon_telegram">Telegram</a>
     <a href="https://vk.com/tuning_vashego_doma" target="_blank" class="messenger__link messenger__link_vk">
       <img src="images/vk.svg" alt="Вконтакте" class="messenger__icon messenger__icon_vk">Вконтакте</a>
-    <a href="#" target="_blank" class="messenger__link messenger__link_whatsApp">
+    <a href="https://api.whatsapp.com/send/?phone=78129860202" target="_blank" class="messenger__link messenger__link_whatsApp">
       <img src="images/whatsapp.svg" alt="WhatsApp" class="messenger__icon messenger__icon_whatsApp">WhatsApp</a>
-    <a href="tel:+79001111111" class="messenger__link messenger__link_call">
+    <a href="tel:+78129860202" class="messenger__link messenger__link_call">
       <img src="images/call.svg" alt="Телефон" class="messenger__icon messenger__icon_call">Позвонить</a>
   </div>
   <button type="button" class="messenger__button"></button>
 </div>
 <script src="./vendor/slider/itc-slider.min.js"></script>
-<script src="./scripts/burger-menu.js"></script>
-<script src="./scripts/popup-goods.js"></script>
-<script src="scripts/chat.js"></script>
-<script src="./scripts/validate.js"></script>
+<script src="./scripts/index.js"></script>
+
 </body>
 
 </html>
