@@ -10,7 +10,7 @@ $mail->CharSet = 'UTF-8';
 $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->isHTML(true);
 
-$mail->setFrom('klimoffsky2707@yandex.ru', 'Иван');
+$mail->setFrom('klimoffsky2707@yandex.ru', 'Заявка');
 $mail->addAddress('klimoffsky27@gmail.com');
 $mail->Subject = 'Поступил заказ';
 
