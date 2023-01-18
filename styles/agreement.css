@@ -343,7 +343,7 @@ template {
 }
 
 .header {
-  z-index: 5;
+  z-index: 4;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -700,7 +700,7 @@ template {
   opacity: 1;
 }
 .popup_opened_style_z-index {
-  z-index: 5;
+  z-index: 6;
 }
 .send-form-popup {
   margin-top: 40%;
@@ -757,7 +757,7 @@ template {
 }
 .messenger {
   position: fixed;
-  z-index: 4;
+  z-index: 5;
   right: 50px;
   bottom: 20px;
 }
