@@ -164,6 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
     evt.preventDefault();
     toggleButtonSendingData(false)
     const formData = new FormData(form);
+    console.log(formData)
     fetch("sendmail.php", {
       method: "POST",
       body: formData,
