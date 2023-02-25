@@ -9,7 +9,9 @@ $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->isHTML(true);
-
+$mail->Host = 'smtp.yandex.ru';
+$mail->SMTPSecure = 'ssl';
+$mail->Port = 465;
 $mail->setFrom('klimoffsky2707@yandex.ru', 'Заявка');
 $mail->addAddress('klimoffsky27@gmail.com');
 $mail->Subject = 'Поступил заказ';

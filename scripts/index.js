@@ -1,5 +1,4 @@
 "use strict"
-
 document.addEventListener("DOMContentLoaded", () => {
   const chatButton = document.querySelector('.messenger__button');
   const chatLinks = document.querySelector('.messenger__links');
@@ -12,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const goodsCabinets = Array.from(document.querySelectorAll(".goods__image-wrapper_type_cabinets"));
   const goodsDressingRooms = Array.from(document.querySelectorAll(".goods__image-wrapper_type_dressing-rooms"));
   const buttonClosePopup = document.querySelector(".popup__close-button");
-  const imagesOpenedPopup = Array.from(document.querySelectorAll(".popup__image"));
+  const imagesOpenedPopup = Array.from(document.querySelectorAll(".our-production__slider-image"));
   const imageOpenedPopup = document.querySelector(".popup__image");
   const body = document.querySelector(".root");
   const scrollWidth = window.innerWidth - body.offsetWidth + 'px';
@@ -36,42 +35,74 @@ document.addEventListener("DOMContentLoaded", () => {
   const fifthKitchenImages = ["./images/kitchens/kitchen5/9oYSHQo9vN8.jpg", "./images/kitchens/kitchen5/_R8AcMsIbkY.jpg", "./images/kitchens/kitchen5/S6G_xgvZqD0.jpg"];
   const sixKitchenImages = ["./images/kitchens/kitchen6/D59fNNNIHxQ.jpg", "./images/kitchens/kitchen6/YhDrFmzxB1o.jpg", "./images/kitchens/kitchen6/znOfK3_mNrg.jpg"];
   const kitchenImagesPack = [firstKitchenImages, secondKitchenImages, thirdKitchenImages, fourthKitchenImages, fifthKitchenImages, sixKitchenImages];
+  const nextSlide = document.querySelector(
+    ".our-production__slider-button_type_next"
+  );
+  const prevSlide = document.querySelector(
+    ".our-production__slider-button_type_prev"
+  );
+  const sliderWrapper = document.querySelector(".our-production__slider-wrapper");
+
   const lockScroll = () => {
     body.classList.add("root_scroll_disabled")
     body.style.paddingRight = scrollWidth
     messenger.style.paddingRight = scrollWidth
   }
-
   goodsCabinets.forEach((cabinet) => {
     cabinet.addEventListener("click", (evt) => {
       imageOpenedPopup.src = evt.target.src
       openPopup(popupOpenedImage)
     })
   })
-
   goodsDressingRooms.forEach((dressingRoom) => {
     dressingRoom.addEventListener("click", (evt) => {
       openPopup(popupOpenedImage)
       imageOpenedPopup.src = evt.target.src;
     })
   })
-
   goodsKitchen.forEach((kitchen, number) => {
     kitchen.addEventListener("click", () => {
       imagesOpenedPopup.forEach((slide, index) => {
         slide.src = kitchenImagesPack[number][index]
       })
       openPopup(popupOpenedSlider)
+      const slideWidth = document.querySelector(".our-production__slider-wrapper").clientWidth;
+      const slidesNumber = document.querySelector(".our-production__slider-wrapper").childElementCount;
+      let slideWidthCounter = 0;
+      nextSlide.addEventListener("click", () => {
+        nextSlide.disabled = true;
+        slideWidthCounter += slideWidth;
+        sliderWrapper.style.transform = `translateX(-${slideWidthCounter}px)`;
+        if (slideWidthCounter === slideWidth * slidesNumber) {
+          sliderWrapper.style.transform = `translateX(0)`;
+          slideWidthCounter = 0;
+        }
+        setTimeout(() => {
+          nextSlide.disabled = false;
+        }, 1000);
+      });
+
+      prevSlide.addEventListener("click", () => {
+        prevSlide.disabled = true;
+        slideWidthCounter -= slideWidth;
+        sliderWrapper.style.transform = `translateX(-${slideWidthCounter}px)`;
+        if (slideWidthCounter === -slideWidth) {
+          sliderWrapper.style.transform = `translateX(-${slideWidth * (slidesNumber - 1)
+            }px)`;
+          slideWidthCounter = slideWidth * (slidesNumber - 1);
+        }
+        setTimeout(() => {
+          prevSlide.disabled = false;
+        }, 1000);
+      });
     })
   });
-
   promoFurnitureImages.forEach((image) => {
     image.addEventListener("click", (evt) => {
       openPopup(popupOpenedImage)
       imageOpenedPopup.src = evt.target.src;
     })
   })
-
   inputElements.forEach((inputElement) => {
     inputElement.addEventListener("input", () => {
       if (!inputElement.validity.valid) {
@@ -83,12 +114,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
   })
-
   const activateSubmitButton = () => {
     buttonForm.classList.remove("form__submit-button_disabled")
     buttonForm.disabled = false
   }
-
   const deactivateSubmitButton = () => {
     buttonForm.classList.add("form__submit-button_disabled")
     buttonForm.disabled = true
@@ -100,13 +129,11 @@ document.addEventListener("DOMContentLoaded", () => {
       activateSubmitButton()
     }
   }
-
   const hasInvalidInputs = (inputList) => {
     return inputList.some((inputElement) => {
       return !inputElement.validity.valid;
     });
   };
-
   const unlockScroll = () => {
     setTimeout(() => {
       body.classList.remove("root_scroll_disabled")
@@ -114,7 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
       messenger.style.paddingRight = "0"
     }, 800)
   }
-
   const closeByEscape = (evt) => {
     if (evt.key === "Escape") {
       const openedPopup = document.querySelector('.popup_opened')
@@ -128,9 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
     lockScroll()
     window.addEventListener("keydown", closeByEscape)
     if (popup.classList.contains("popup_type_slider")) {
-      imagesOpenedPopup.forEach((imageOpenedPopup) => {
-        imageOpenedPopup.style.visibility = "visible"
-      })
+      const slideWidth = document.querySelector(".our-production__slider").offsettWidth;
     }
   }
 
@@ -143,9 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.removeEventListener("keydown", closeByEscape)
     if (popup.classList.contains("popup_type_slider")) {
       imagesOpenedPopup.forEach((imageOpenedPopup) => {
-        setTimeout(() => {
-          imageOpenedPopup.style.visibility = "hidden"
-        }, 800)
+        imageOpenedPopup.src = "";
       })
     }
   }
@@ -164,14 +186,12 @@ document.addEventListener("DOMContentLoaded", () => {
     evt.preventDefault();
     toggleButtonSendingData(false)
     const formData = new FormData(form);
-    fetch("sendmail.php", {
-      method: "POST",
-      body: formData,
-    }).then((response) => {
+    console.log(formData)
+    fetch("sendmail.php", { method: "POST", body: formData, }).then((response) => {
       if (response.ok) {
         return response.json();
       } else {
-        return Promise.reject(`Ошибка: ${response.status}`);
+        return Promise.reject(`Ошибка:${response.status}`);
       }
     }).then((response) => {
       openPopup(popupSendFormConfirmation)
@@ -191,19 +211,16 @@ document.addEventListener("DOMContentLoaded", () => {
       overlay.style.display = "none";
     })
   })
-
   document.addEventListener('click', function (evt) {
     if (evt.target.id === 'overlay') {
       chatLinks.classList.remove('messenger__links_show');
       overlay.style.display = "none";
     }
-
     if (evt.target === chatButton) {
       chatLinks.classList.toggle('messenger__links_show');
       overlay.style.display = "block";
     }
   })
-
   popups.forEach((popup) => {
     popup.addEventListener("click", (evt) => {
       if (evt.target.classList.contains("popup")) {
@@ -217,20 +234,17 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   })
-
   buttonBurgerMenu.addEventListener('click', () => {
     navigationMenu.style.left = '0';
   })
-
   buttonCloseNavigationMenu.addEventListener('click', () => {
     navigationMenu.style.left = '-100%';
   })
-
   agreementCheckbox.addEventListener("change", () => {
     toggleButtonState(hasInvalidInputs(inputElements))
   })
-
   buttonSendFormConfirmation.addEventListener("click", () => {
     closePopup(popupSendFormConfirmation);
   })
 })
+
